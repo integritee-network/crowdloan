@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/crowdloan/static/js/main.28e203f0.chunk.js",
-    "main.js.map": "/crowdloan/static/js/main.28e203f0.chunk.js.map",
+    "main.js": "/crowdloan/static/js/main.c76a64d9.chunk.js",
+    "main.js.map": "/crowdloan/static/js/main.c76a64d9.chunk.js.map",
     "runtime-main.js": "/crowdloan/static/js/runtime-main.2b63b04d.js",
     "runtime-main.js.map": "/crowdloan/static/js/runtime-main.2b63b04d.js.map",
     "static/css/2.6b44ab2f.chunk.css": "/crowdloan/static/css/2.6b44ab2f.chunk.css",
-    "static/js/2.33cdcc2c.chunk.js": "/crowdloan/static/js/2.33cdcc2c.chunk.js",
-    "static/js/2.33cdcc2c.chunk.js.map": "/crowdloan/static/js/2.33cdcc2c.chunk.js.map",
+    "static/js/2.e869ad01.chunk.js": "/crowdloan/static/js/2.e869ad01.chunk.js",
+    "static/js/2.e869ad01.chunk.js.map": "/crowdloan/static/js/2.e869ad01.chunk.js.map",
     "index.html": "/crowdloan/index.html",
     "static/css/2.6b44ab2f.chunk.css.map": "/crowdloan/static/css/2.6b44ab2f.chunk.css.map",
-    "static/js/2.33cdcc2c.chunk.js.LICENSE.txt": "/crowdloan/static/js/2.33cdcc2c.chunk.js.LICENSE.txt",
+    "static/js/2.e869ad01.chunk.js.LICENSE.txt": "/crowdloan/static/js/2.e869ad01.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/crowdloan/static/media/outline-icons.ddae9b1b.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.2b63b04d.js",
     "static/css/2.6b44ab2f.chunk.css",
-    "static/js/2.33cdcc2c.chunk.js",
-    "static/js/main.28e203f0.chunk.js"
+    "static/js/2.e869ad01.chunk.js",
+    "static/js/main.c76a64d9.chunk.js"
   ]
 }
