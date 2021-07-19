@@ -67,7 +67,9 @@ export default function Main (props) {
       <p>1. Download the Polkadot Browser extension for Chrome/Firefox <a href='https://polkadot.js.org/extension/'>here</a>.</p>
       <p>2. Ensure that you have KSM in your Polkadot.js account.</p>
       <p>3. Unbond your KSM. See further details here.</p>
-      <Form>
+      <Grid.Row>
+        <Grid.Column>gasfdsfasdfsdfafasdf</Grid.Column>
+        <Grid.Column> <Form>
         <Form.Field>
           <Input
             fluid
@@ -97,7 +99,8 @@ export default function Main (props) {
           />
         </Form.Field>
         <div style={{ overflowWrap: 'break-word' }}>{status}</div>
-      </Form>
-      </Grid.Column>
+        </Form></Grid.Column>
+      </Grid.Row>
+    </Grid.Column>
   );
 }
