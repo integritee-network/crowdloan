@@ -54,12 +54,12 @@ function Main () {
         {/* <h1 style={{fontFamily: 'Gotham', fontWeight: 'bold', fontStyle: 'normal'}}>HELLO</h1> */}
         <Grid stackable columns='equal'>
           <Grid.Row className={styles.standardBlue} >
-            <Why/>
+            <Why />
           </Grid.Row>
-          <Grid.Row className={styles.standardBlue}>
+          <Grid.Row className={styles.standardBlue} >
             <Crowdloan />
           </Grid.Row>
-          <Grid.Row className={styles.standardBlue}>
+          <Grid.Row style={{ display: 'flexRoot' }} className={styles.standardBlue}>
             <Contribute id='#contribute' accountPair={accountPair} />
           </Grid.Row>
         </Grid>

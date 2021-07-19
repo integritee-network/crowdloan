@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { ReactComponent as Logo } from './css/IntegriteeLogoAndSlogan.svg';
+// import { ReactComponent as Logo } from './css/IntegriteeLogoAndSlogan.svg';
+import logo from './css/IntegriteeLogoAndSlogan.svg';
 
 import {
   Menu,
@@ -55,7 +56,8 @@ function Main (props) {
     >
       <Container>
         <Menu.Menu>
-          <Logo position='left' style={{paddingLeft:0,width: '200'}}/>
+          {/* <Logo position='left' style={{paddingLeft:0,width: '200'}}/> */}
+          <img src={logo} width={200} />
           {/* <Image src={`${process.env.PUBLIC_URL}/assets/substrate-logo.png`} size='mini' /> */}
         </Menu.Menu>
         <Menu.Menu position='right'>
