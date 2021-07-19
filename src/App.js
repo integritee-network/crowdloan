@@ -1,14 +1,14 @@
 import React, { useState, createRef } from 'react';
 import { Container, Dimmer, Loader, Grid, Sticky, Message } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
-
 import { SubstrateContextProvider, useSubstrate } from './substrate-lib';
 
 import AccountSelector from './AccountSelector';
-import BlockNumber from './BlockNumber';
-import NodeInfo from './NodeInfo';
 import Contribute from './Contribute';
 import Crowdloan from './Crowdloan';
+import styles from './css/styles.module.css';
+import Why from './Why';
+import './css/App.css'
 
 function Main () {
   const [accountAddress, setAccountAddress] = useState(null);
@@ -40,6 +40,9 @@ function Main () {
     return loader('Loading accounts (please review any extension\'s authorization)');
   }
 
+  // const anchor = document.querySelector('#some-id')
+  // anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+
   const contextRef = createRef();
 
   return (
@@ -48,16 +51,16 @@ function Main () {
         <AccountSelector setAccountAddress={setAccountAddress} />
       </Sticky>
       <Container>
+        {/* <h1 style={{fontFamily: 'Gotham', fontWeight: 'bold', fontStyle: 'normal'}}>HELLO</h1> */}
         <Grid stackable columns='equal'>
-          <Grid.Row stretched>
-            <NodeInfo />
-            <BlockNumber />
+          <Grid.Row className={styles.standardBlue} >
+            <Why/>
           </Grid.Row>
-          <Grid.Row>
+          <Grid.Row className={styles.standardBlue}>
             <Crowdloan />
           </Grid.Row>
-          <Grid.Row>
-            <Contribute accountPair={accountPair} />
+          <Grid.Row className={styles.standardBlue}>
+            <Contribute id='#contribute' accountPair={accountPair} />
           </Grid.Row>
         </Grid>
       </Container>

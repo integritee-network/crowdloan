@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { ReactComponent as Logo } from './css/IntegriteeLogoAndSlogan.svg';
 
 import {
   Menu,
@@ -54,7 +55,15 @@ function Main (props) {
     >
       <Container>
         <Menu.Menu>
-          <Image src={`${process.env.PUBLIC_URL}/assets/substrate-logo.png`} size='mini' />
+          <Logo position='left' style={{paddingLeft:0,width: '200'}}/>
+          {/* <Image src={`${process.env.PUBLIC_URL}/assets/substrate-logo.png`} size='mini' /> */}
+        </Menu.Menu>
+        <Menu.Menu position='right'>
+        {/* <button onclick="document.getElementById('contribute').scrollIntoView()">
+        Back to the top
+        </button> */}
+          {/* <Link to="./Appscontribute" style={{ color: '#000563', backgroundColor: '#75e6da' }} href="#contribute">Participate Now!</Link> */}
+          <a style={{color:'#000563' ,backgroundColor:'#75e6da'}} href="#contribute">Participate Now!</a>
         </Menu.Menu>
         <Menu.Menu position='right' style={{ alignItems: 'center' }}>
           { !accountSelected
