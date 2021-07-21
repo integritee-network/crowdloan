@@ -45,17 +45,11 @@ function Main (props) {
 
   return (
     <Menu
-      attached='top'
       tabular
-      style={{
-        backgroundColor: '#fff',
-        borderColor: '#fff',
-        paddingTop: '1em',
-        paddingBottom: '1em'
-      }}
+      className="main-menu"
     >
       <Container>
-        <Menu.Menu>
+        <Menu.Menu className="logo">
           {/* <Logo position='left' style={{paddingLeft:0,width: '200'}}/> */}
           <img src={logo} width={200} />
           {/* <Image src={`${process.env.PUBLIC_URL}/assets/substrate-logo.png`} size='mini' /> */}
@@ -65,9 +59,21 @@ function Main (props) {
         Back to the top
         </button> */}
           {/* <Link to="./Appscontribute" style={{ color: '#000563', backgroundColor: '#75e6da' }} href="#contribute">Participate Now!</Link> */}
-          <a style={{color:'#000563' ,backgroundColor:'#75e6da'}} href="#contribute">Participate Now!</a>
+          <Menu.Item
+            name='Crowdloan Campaign'
+          />
+          <Menu.Item
+            name='Particpate'
+          />
+          <Menu.Item
+            name='About'
+          />
+          <Menu.Item
+            name='Contact'
+          />
+          <a className="ui primary button" href="#contribute">Participate Now!</a>
         </Menu.Menu>
-        <Menu.Menu position='right' style={{ alignItems: 'center' }}>
+        {/* <Menu.Menu position='right' style={{ alignItems: 'center' }}>
           { !accountSelected
             ? <span>
               Add your account with the{' '}
@@ -101,7 +107,7 @@ function Main (props) {
             value={accountSelected}
           />
           <BalanceAnnotation accountSelected={accountSelected} />
-        </Menu.Menu>
+        </Menu.Menu> */}
       </Container>
     </Menu>
   );
