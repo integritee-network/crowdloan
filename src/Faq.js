@@ -3,7 +3,7 @@ import React, { useState, } from 'react';
 
 export default function Main (props) {
     const [faqContent, setFaqContent] = useState();
-    const showContent = (content) => {
+    const showContent = () => {
         switch (faqContent) {
             default: return (<div className="text"><h1>How does crowdlending work?</h1>
                 <p>Kusama parachain slots are leased, for a limited period, via slot auctions. Projects bid for
@@ -13,12 +13,12 @@ export default function Main (props) {
                 its go Kusama.</p><p>Lenders (or “nominators”) never cede custody of their tokens; the bids are merely locked for the
                 duration of the lease, and released in full at the end of the period. Integritee will never get access
                 to your wallet or tokens and will never hold any contributions. This process works directly between contributors and the Kusama Network.</p></div>)
-            case 2: return (<div><h1>WHAT WILL I GET FOR MY SUPPORT?</h1></div>)
-            case 3: return (<div><h1>HOW LONG WILL THE TOKENS BE LOCKED?</h1></div>)
-            case 4: return (<div><h1>WHAT IS UNBONDING?</h1></div>)
-            case 5: return (<div><h1>I HAVE KSM ON AN EXCHANGE, DO I NEED TO UNBOND?</h1></div>)
-            case 6: return (<div><h1>WHAT HAPPENS IF INTEGRITEE DOES NOT WIN THE PARACHAIN AUCTION?</h1></div>)
-            case 7: return (<div><h1>WILL THERE BE ANOTHER CHANCE TO PARTICIPATE?</h1></div>)
+            case 2: return (<div className="text"><h1>WHAT WILL I GET FOR MY SUPPORT?</h1></div>)
+            case 3: return (<div className="text"><h1>HOW LONG WILL THE TOKENS BE LOCKED?</h1></div>)
+            case 4: return (<div className="text"><h1>WHAT IS UNBONDING?</h1></div>)
+            case 5: return (<div className="text"><h1>I HAVE KSM ON AN EXCHANGE, DO I NEED TO UNBOND?</h1></div>)
+            case 6: return (<div className="text"><h1>WHAT HAPPENS IF INTEGRITEE DOES NOT WIN THE PARACHAIN AUCTION?</h1></div>)
+            case 7: return (<div className="text"><h1>WILL THERE BE ANOTHER CHANCE TO PARTICIPATE?</h1></div>)
         }
     }
 
@@ -35,7 +35,7 @@ export default function Main (props) {
                 <button onClick={() => setFaqContent(7)}>WILL THERE BE ANOTHER CHANCE TO PARTICIPATE?</button>
             </Grid.Column>
             <Grid.Column width={8}>
-                {showContent(faqContent)}
+                {showContent()}
             </Grid.Column>
         </Grid>
     </div>)
