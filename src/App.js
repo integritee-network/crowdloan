@@ -8,6 +8,7 @@ import Contribute from './Contribute';
 import Crowdloan from './Crowdloan';
 import styles from './css/styles.module.css';
 import Why from './Why';
+import Faq from './Faq';
 import './css/App.css'
 
 function Main () {
@@ -59,8 +60,11 @@ function Main () {
           <Grid.Row className={styles.standardBlue} >
             <Crowdloan />
           </Grid.Row>
-          <Grid.Row style={{ display: 'flexRoot' }} className={styles.standardBlue}>
+          <Grid.Row className={styles.standardBlue}>
             <Contribute id='#contribute' accountPair={accountPair} />
+          </Grid.Row>
+          <Grid.Row className={styles.standardWhite}>
+            <Faq />
           </Grid.Row>
         </Grid>
       </Container>
