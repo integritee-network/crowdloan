@@ -5,7 +5,7 @@ export default function Main (props) {
     const [faqContent, setFaqContent] = useState();
     const showContent = (content) => {
         switch (faqContent) {
-            default: return (<div><h1>How does crowdlending work?</h1>
+            default: return (<div className="text"><h1>How does crowdlending work?</h1>
                 <p>Kusama parachain slots are leased, for a limited period, via slot auctions. Projects bid for
                 auction slots with collateral in the form of KSM tokens. Crowdlending is one way for bid
                 ders to raise the collateral they need to win a slot. Integritee supporters can “lend” their
@@ -25,7 +25,7 @@ export default function Main (props) {
     return (<div className='faq'>
         <h1>FAQ's</h1>
         <Grid>
-            <Grid.Column width={4}>
+            <Grid.Column width={4} className='link'>
                 <button onClick={() => setFaqContent(1)}>HOW DOES CROWDLENDING WORK?</button>
                 <button onClick={() => setFaqContent(2)}>WHAT WILL I GET FOR MY SUPPORT?</button>
                 <button onClick={() => setFaqContent(3)}>HOW LONG WILL THE TOKENS BE LOCKED?</button>

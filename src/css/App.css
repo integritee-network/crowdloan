@@ -239,3 +239,7 @@ body {
 .faq {
     background: #eff3f6;
 }
+.faq button {
+    background:none;
+    border:none;
+}
