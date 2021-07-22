@@ -4,12 +4,11 @@ import { TxButton } from './substrate-lib/components';
 import { useSubstrate } from './substrate-lib';
 import { Element } from 'react-scroll';
 import './css/styles.module.css';
-import krakenLogo from './css/Exchanges/kraken-vector-logo.svg';
+import krakenLogo, { ReactComponent as Kraken } from './css/Exchanges/kraken-vector-logo.svg';
 // import kucoin from './css/Exchanges/KUCOIN.svg';
 // import okex from './css/Exchanges/okex.svg';
 import { ReactComponent as Kucoin } from './css/Exchanges/KUCOIN.svg';
 import { ReactComponent as Okex } from './css/Exchanges/okex.svg';
-import { ReactComponent as Kraken } from './css/Exchanges/kraken-vector-logo.svg';
 
 export default function Main (props) {
   const [status, setStatus] = useState(null);
@@ -132,7 +131,7 @@ export default function Main (props) {
   );
 }
 
-{/* <Grid stackable columns='equal'>
+{ /* <Grid stackable columns='equal'>
           <Grid.Row stretched>
             <NodeInfo />
             <BlockNumber />
@@ -143,4 +142,4 @@ export default function Main (props) {
           <Grid.Row>
             <Contribute accountPair={accountPair} />
           </Grid.Row>
-        </Grid> */}
+        </Grid> */ }

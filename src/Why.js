@@ -1,9 +1,9 @@
-import './css/App.css'
-import { Container, Button} from 'semantic-ui-react';
+import './css/App.css';
+import { Container, Button } from 'semantic-ui-react';
 import GraphImage from './Images/graph.png';
 
 export default function Main (props) {
-    return (
+  return (
         <div className="why">
             <Container>
                 <div className="text">
@@ -34,20 +34,20 @@ export default function Main (props) {
                     <li>
                     <span>PARTICIPANTS</span>
                     16’508
-                    </li> 
+                    </li>
                     <li>
                     <span>TEER CONTRIBUTED</span>
                     588’904
-                    </li> 
+                    </li>
                     <li>
                     <span>TEER AVAILABLE</span>
                     952’280’254
-                    </li> 
+                    </li>
                 </ul>
                 <div className="graph">
                     <img src={GraphImage} alt="" />
                 </div>
             </Container>
         </div>
-    )
+  );
 }

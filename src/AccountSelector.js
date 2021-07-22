@@ -44,8 +44,8 @@ function Main (props) {
   };
 
   const scroll = () => {
-    document.getElementById('contribute').scrollIntoView()
-  }
+    document.getElementById('contribute').scrollIntoView();
+  };
 
   return (
     <Menu

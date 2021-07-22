@@ -8,7 +8,7 @@ import Contribute from './Contribute';
 import Crowdloan from './Crowdloan';
 import Why from './Why';
 import Faq from './Faq';
-import './css/App.css'
+import './css/App.css';
 import ThreeBox from './ThreeBox';
 import How from './How';
 
