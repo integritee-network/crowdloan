@@ -4,7 +4,7 @@ import { TxButton } from './substrate-lib/components';
 import { useSubstrate } from './substrate-lib';
 import { Element } from 'react-scroll';
 import './css/styles.module.css';
-// import kraken from './css/Exchanges/kraken-vector-logo.svg';
+import krakenLogo from './css/Exchanges/kraken-vector-logo.svg';
 // import kucoin from './css/Exchanges/KUCOIN.svg';
 // import okex from './css/Exchanges/okex.svg';
 import { ReactComponent as Kucoin } from './css/Exchanges/KUCOIN.svg';
@@ -68,24 +68,28 @@ export default function Main (props) {
 
   return (
     <span>
-      <h5 style={{ color: "#75e6da" }}>2 WAYS TO TAKE PART</h5>
+      <h5>2 WAYS TO TAKE PART</h5>
       <h1>Participate in the Integritee Crowdloan!</h1>
       <Grid>
         <Grid.Column width={8}>
-          <h5>ON THIS SITE</h5>
+          <h5 style={{ marginTop: 40 }}>ON THIS SITE</h5>
           <h3>INTEGRITEE</h3>
 
           <h5>THROUGH AN EXCHANGE</h5>
           {/* <img src={kraken} width={300} height={100}></img>
           <img src={kucoin} width={300} height={100}></img>
           <img src={okex}></img> */}
-
+          {/* <img
+            src={krakenLogo}
+            style={{ width: 200, maginTop: '0px' }}
+            alt="website logo"
+          /> */}
           <Kraken position='left' style={{ width: '200' }} />
           <Kucoin position='left' style={{ width: '200' }} />
           <Okex position='left' style={{ width: '200' }} />
         </Grid.Column>
         <Grid.Column style={{ padding: '0' }} id='contribute' width={8}>
-          <h1>On this site</h1>
+          <h1 style={{ marginTop: 40 }}>On this site</h1>
           <p>1. Download the Polkadot Browser extension for Chrome/Firefox <a href='https://polkadot.js.org/extension/'>here</a>.</p>
           <p>2. Ensure that you have KSM in your Polkadot.js account.</p>
           <p>3. Unbond your KSM. See further details here.</p>
