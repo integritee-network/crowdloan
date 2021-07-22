@@ -67,15 +67,16 @@ export default function Main (props) {
   }, []);
 
   return (
-    <span>
-      <h5>2 WAYS TO TAKE PART</h5>
-      <h1>Participate in the Integritee Crowdloan!</h1>
+    <div className='contribute'>
+      <div className='text'>
+        <span>2 WAYS TO TAKE PART</span>
+        <h1>Participate in the <br />Integritee Crowdloan!</h1>
       <Grid>
         <Grid.Column width={8}>
-          <h5 style={{ marginTop: 40 }}>ON THIS SITE</h5>
+            <span>ON THIS SITE</span>
           <h3>INTEGRITEE</h3>
 
-          <h5>THROUGH AN EXCHANGE</h5>
+            <span>THROUGH AN EXCHANGE</span>
           {/* <img src={kraken} width={300} height={100}></img>
           <img src={kucoin} width={300} height={100}></img>
           <img src={okex}></img> */}
@@ -126,7 +127,8 @@ export default function Main (props) {
           </Form>
         </Grid.Column>
       </Grid>
-    </span>
+      </div>
+    </div>
   );
 }
 

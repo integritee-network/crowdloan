@@ -236,10 +236,57 @@ body {
   height: auto;
   display: block;
 }
-.faq {
-    background: #eff3f6;
+.contribute {
+    background: #000065;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #eff3f6;    
+    padding: 150px 0;
+    background-size: 1130px !important;
+    background-position: 120% -120px !important;
 }
+.contribute span {
+    font-family: "Gotham Rounded", sans-serif;
+    color: #70e6da;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    display: block;
+  }
+  .contribute h1 {
+    font-family: "Gotham Rounded", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 20px;
+  }
+
+.faq {
+    font-family: 'Gotham Rounded', sans-serif;
+    background: #eff3f6;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000065;    
+    padding: 150px 0;
+    background-size: 1130px !important;
+    background-position: 120% -120px !important;
+}
+
+/* .faq h1 {
+    font-family: "Gotham Rounded", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: #000065;  
+    margin: 0 0 20px;
+  } */
 .faq button {
     background:none;
     border:none;
+    text-align: left;
+    color: #000065; 
+}
+
+.faq button:hover {
+    color: #70e6da;
 }

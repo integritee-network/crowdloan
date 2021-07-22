@@ -54,7 +54,7 @@ function Main () {
         <ThreeBox />
         <How />
         <Container>
-        <Crowdloan />
+        {/* <Crowdloan /> */}
         <Contribute id='#contribute' accountPair={accountPair} />
       </Container>
       <Faq />
