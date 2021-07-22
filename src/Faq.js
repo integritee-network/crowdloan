@@ -22,7 +22,7 @@ export default function Main (props) {
         }
     }
 
-    return (<div>
+    return (<div className='faq'>
         <h1>FAQ's</h1>
         <Grid>
             <Grid.Column width={4}>

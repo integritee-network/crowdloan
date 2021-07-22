@@ -6,7 +6,6 @@ import { SubstrateContextProvider, useSubstrate } from './substrate-lib';
 import AccountSelector from './AccountSelector';
 import Contribute from './Contribute';
 import Crowdloan from './Crowdloan';
-import styles from './css/styles.module.css';
 import Why from './Why';
 import Faq from './Faq';
 import './css/App.css'
@@ -58,6 +57,7 @@ function Main () {
         <Crowdloan />
         <Contribute id='#contribute' accountPair={accountPair} />
       </Container>
+      <Faq />
     </div>
   );
 }

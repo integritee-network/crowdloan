@@ -54,13 +54,9 @@ function Main (props) {
     >
       <Container>
         <Menu.Menu className="logo">
-          {/* <Logo position='left' style={{paddingLeft:0,width: '200'}}/> */}
           <img src={logo} width={200} />
-          {/* <Image src={`${process.env.PUBLIC_URL}/assets/substrate-logo.png`} size='mini' /> */}
         </Menu.Menu>
         <Menu.Menu position='right'>
-          <Button style={{ color: 'rgb(0, 5, 99)', backgroundColor: '#75e6da' }} onClick={scroll} >Participate Now!</Button>
-          {/* <Link to="./Appscontribute" style={{ color: '#000563', backgroundColor: '#75e6da' }} href="#contribute">Participate Now!</Link> */}
           <Menu.Item
             name='Crowdloan Campaign'
           />
