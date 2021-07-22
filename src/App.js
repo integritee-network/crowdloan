@@ -10,6 +10,8 @@ import styles from './css/styles.module.css';
 import Why from './Why';
 import Faq from './Faq';
 import './css/App.css'
+import ThreeBox from './ThreeBox';
+import How from './How';
 
 function Main () {
   const [accountAddress, setAccountAddress] = useState(null);
@@ -48,25 +50,13 @@ function Main () {
 
   return (
     <div ref={contextRef}>
-      <Sticky context={contextRef}>
-        <AccountSelector setAccountAddress={setAccountAddress} />
-      </Sticky>
-      <Container>
-        {/* <h1 style={{fontFamily: 'Gotham', fontWeight: 'bold', fontStyle: 'normal'}}>HELLO</h1> */}
-        <Grid stackable columns='equal'>
-          <Grid.Row className={styles.standardBlue} >
-            <Why />
-          </Grid.Row>
-          <Grid.Row className={styles.standardBlue} >
-            <Crowdloan />
-          </Grid.Row>
-          <Grid.Row className={styles.standardBlue}>
-            <Contribute id='#contribute' accountPair={accountPair} />
-          </Grid.Row>
-          <Grid.Row className={styles.standardWhite}>
-            <Faq />
-          </Grid.Row>
-        </Grid>
+      <AccountSelector setAccountAddress={setAccountAddress} />
+        <Why />
+        <ThreeBox />
+        <How />
+        <Container>
+        <Crowdloan />
+        <Contribute id='#contribute' accountPair={accountPair} />
       </Container>
     </div>
   );
