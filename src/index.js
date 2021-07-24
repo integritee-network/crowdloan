@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 
-import './Fonts/gotham-rounded/GothamRounded-Bold.otf'
-import './Fonts/gotham-rounded/GothamRounded-Medium.otf'
+import './Fonts/gotham-rounded/GothamRounded-Bold.otf';
+import './Fonts/gotham-rounded/GothamRounded-Medium.otf';
 
 
 ReactDOM.render(<App />,

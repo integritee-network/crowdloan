@@ -4,12 +4,11 @@ import { TxButton } from './substrate-lib/components';
 import { useSubstrate } from './substrate-lib';
 import { Element } from 'react-scroll';
 import './css/styles.module.css';
-// import kraken from './css/Exchanges/kraken-vector-logo.svg';
+import krakenLogo, { ReactComponent as Kraken } from './css/Exchanges/kraken-vector-logo.svg';
 // import kucoin from './css/Exchanges/KUCOIN.svg';
 // import okex from './css/Exchanges/okex.svg';
 import { ReactComponent as Kucoin } from './css/Exchanges/KUCOIN.svg';
 import { ReactComponent as Okex } from './css/Exchanges/okex.svg';
-import { ReactComponent as Kraken } from './css/Exchanges/kraken-vector-logo.svg';
 
 export default function Main (props) {
   const [status, setStatus] = useState(null);
@@ -67,25 +66,30 @@ export default function Main (props) {
   }, []);
 
   return (
-    <span>
-      <h5 style={{ color: "#75e6da" }}>2 WAYS TO TAKE PART</h5>
-      <h1>Participate in the Integritee Crowdloan!</h1>
+    <div className='contribute'>
+      <div className='text'>
+        <span>2 WAYS TO TAKE PART</span>
+        <h1>Participate in the <br />Integritee Crowdloan!</h1>
       <Grid>
         <Grid.Column width={8}>
-          <h5>ON THIS SITE</h5>
+            <span>ON THIS SITE</span>
           <h3>INTEGRITEE</h3>
 
-          <h5>THROUGH AN EXCHANGE</h5>
+            <span>THROUGH AN EXCHANGE</span>
           {/* <img src={kraken} width={300} height={100}></img>
           <img src={kucoin} width={300} height={100}></img>
           <img src={okex}></img> */}
-
+          {/* <img
+            src={krakenLogo}
+            style={{ width: 200, maginTop: '0px' }}
+            alt="website logo"
+          /> */}
           <Kraken position='left' style={{ width: '200' }} />
           <Kucoin position='left' style={{ width: '200' }} />
           <Okex position='left' style={{ width: '200' }} />
         </Grid.Column>
         <Grid.Column style={{ padding: '0' }} id='contribute' width={8}>
-          <h1>On this site</h1>
+          <h1 style={{ marginTop: 40 }}>On this site</h1>
           <p>1. Download the Polkadot Browser extension for Chrome/Firefox <a href='https://polkadot.js.org/extension/'>here</a>.</p>
           <p>2. Ensure that you have KSM in your Polkadot.js account.</p>
           <p>3. Unbond your KSM. See further details here.</p>
@@ -122,11 +126,12 @@ export default function Main (props) {
           </Form>
         </Grid.Column>
       </Grid>
-    </span>
+      </div>
+    </div>
   );
 }
 
-{/* <Grid stackable columns='equal'>
+{ /* <Grid stackable columns='equal'>
           <Grid.Row stretched>
             <NodeInfo />
             <BlockNumber />
@@ -137,4 +142,4 @@ export default function Main (props) {
           <Grid.Row>
             <Contribute accountPair={accountPair} />
           </Grid.Row>
-        </Grid> */}
+        </Grid> */ }

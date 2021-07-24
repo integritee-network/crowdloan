@@ -6,8 +6,8 @@ import { SubstrateContextProvider, useSubstrate } from './substrate-lib';
 import AccountSelector from './AccountSelector';
 import Contribute from './Contribute';
 import Crowdloan from './Crowdloan';
-import styles from './css/styles.module.css';
 import Why from './Why';
+import Faq from './Faq';
 import './css/App.css';
 import ThreeBox from './ThreeBox';
 import How from './How';
@@ -52,16 +52,17 @@ function Main () {
 
   return (
     <div ref={contextRef}>
-        <AccountSelector setAccountAddress={setAccountAddress} />
+      <AccountSelector setAccountAddress={setAccountAddress} />
         <Why />
         <ThreeBox />
         <How />
         <Participate />
         <Value />
         <Container>
-        <Crowdloan />
+        {/* <Crowdloan /> */}
         <Contribute id='#contribute' accountPair={accountPair} />
       </Container>
+      <Faq />
     </div>
   );
 }

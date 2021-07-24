@@ -1,9 +1,9 @@
-import './css/App.css'
-import { Container, Grid} from 'semantic-ui-react';
+import './css/App.css';
+import { Container, Grid } from 'semantic-ui-react';
 import Otherimage from './Images/other-image.png';
 
 export default function How (props) {
-    return (
+  return (
         <div className="white-bg">
             <Container>
                 <div className="text">
@@ -29,7 +29,7 @@ export default function How (props) {
                             <p>
                             Integritee aims to secure its first Kusama parachain by bidding for
                             slots in the <strong>8-12 range</strong>. We will be rewarding KSM holders who
-                            support Integritee bids with TEER. 
+                            support Integritee bids with TEER.
                             </p>
                         </Grid.Column>
                         <Grid.Column>
@@ -42,5 +42,5 @@ export default function How (props) {
                 </div>
             </Container>
         </div>
-    )
+  );
 }
