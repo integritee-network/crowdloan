@@ -5,6 +5,14 @@ import Slider from "react-slick";
 
 
 export default function Main (props) {
+    var settings = {
+        dots: false,
+        infinite: true,
+        vertical: true,
+        speed: 500,
+        slidesToShow: 8,
+        slidesToScroll: 1
+      };
   return (
         <div className="why">
             <Container>
@@ -29,8 +37,7 @@ export default function Main (props) {
                         We all know the problems with centralized data services. Integritee
                         is the solution. Help us build a new internet where privacy comes as standard and earn TEER in the process.
                     </p>
-                    <Button className="outline-btn">Back Integritee!</Button>
-                    <Button className="gradient-btn">17'004 Lorem Ispum</Button>
+                    <Button className="outline-btn with-icon">Back Integritee!</Button>
                 </div>
                 <ul className="counter">
                     <li>
@@ -38,12 +45,8 @@ export default function Main (props) {
                     16’508
                     </li>
                     <li>
-                    <span>TEER CONTRIBUTED</span>
+                    <span>KSM CONTRIBUTED</span>
                     588’904
-                    </li>
-                    <li>
-                    <span>TEER AVAILABLE</span>
-                    952’280’254
                     </li>
                 </ul>
                 <div className="graph">

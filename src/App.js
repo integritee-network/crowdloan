@@ -13,6 +13,10 @@ import ThreeBox from './ThreeBox';
 import How from './How';
 import Participate from './Participate';
 import Value from './Value';
+import Rewards from './Rewards';
+import Roadmap from './Roadmap';
+import Clients from './clients';
+import Footer from './Footer';
 
 
 function Main () {
@@ -57,12 +61,13 @@ function Main () {
         <ThreeBox />
         <How />
         <Participate />
+        <Rewards />
         <Value />
-        <Container>
-        {/* <Crowdloan /> */}
-        <Contribute id='#contribute' accountPair={accountPair} />
-      </Container>
-      <Faq />
+        <Roadmap />
+        <Faq />
+        <Clients />
+        {/* <Contribute id='#contribute' accountPair={accountPair} /> */}
+        <Footer />
     </div>
   );
 }

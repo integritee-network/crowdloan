@@ -43,33 +43,16 @@ export default function Participate () {
                                     <li>Ensure that you have KSM in your Polkadot.js account.</li>
                                     <li>Unbond your KSM. See further details <a href="#">here</a>.</li>
                                 </ol>
-                                <div className="form">
+                                <div className="form mb-5">
                                     <div className="boxes">
                                         <label>KSM to Lock Up:</label>
                                         <input text="tel" placeholder="Enter KSM Amount" />
-                                    </div>
-                                    <div className="boxes">
-                                        <label>TEER Reward:</label>
-                                        <strong>1’258 TEER</strong>
                                     </div>
                                 </div>
                                 <Button className="gradient-btn">Participate Now</Button>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
-                    <div className="calculator">
-                        <h3>TEER Reward Calculator</h3>
-                        <div className="form">
-                            <div className="boxes">
-                                <label>KSM to Lock Up:</label>
-                                <input text="tel" placeholder="Enter KSM Amount" />
-                            </div>
-                            <div className="boxes">
-                                <label>TEER Reward:</label>
-                                <strong>1’258 TEER</strong>
-                            </div>
-                        </div>
-                    </div>
             </Container>
         </div>
     )
