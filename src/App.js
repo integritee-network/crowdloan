@@ -8,9 +8,12 @@ import Contribute from './Contribute';
 import Crowdloan from './Crowdloan';
 import styles from './css/styles.module.css';
 import Why from './Why';
-import './css/App.css'
+import './css/App.css';
 import ThreeBox from './ThreeBox';
 import How from './How';
+import Participate from './Participate';
+import Value from './Value';
+
 
 function Main () {
   const [accountAddress, setAccountAddress] = useState(null);
@@ -53,6 +56,8 @@ function Main () {
         <Why />
         <ThreeBox />
         <How />
+        <Participate />
+        <Value />
         <Container>
         <Crowdloan />
         <Contribute id='#contribute' accountPair={accountPair} />
