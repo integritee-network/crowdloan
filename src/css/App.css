@@ -273,14 +273,16 @@ body {
     background-position: 120% -120px !important;
 }
 
-/* .faq h1 {
+.faq h1 {
     font-family: "Gotham Rounded", sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 500;
     color: #000065;  
     margin: 0 0 20px;
-  } */
+  }
 .faq button {
+    font-family: "Gotham Rounded", sans-serif;
+    font-weight: 300;
     background:none;
     border:none;
     text-align: left;
