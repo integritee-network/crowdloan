@@ -11,6 +11,13 @@ import Faq from './Faq';
 import './css/App.css';
 import ThreeBox from './ThreeBox';
 import How from './How';
+import Participate from './Participate';
+import Value from './Value';
+import Rewards from './Rewards';
+import Roadmap from './Roadmap';
+import Clients from './clients';
+import Footer from './Footer';
+
 
 function Main () {
   const [accountAddress, setAccountAddress] = useState(null);
@@ -53,11 +60,14 @@ function Main () {
         <Why />
         <ThreeBox />
         <How />
-        <Container>
-        {/* <Crowdloan /> */}
-        <Contribute id='#contribute' accountPair={accountPair} />
-      </Container>
-      <Faq />
+        <Participate />
+        <Rewards />
+        <Value />
+        <Roadmap />
+        <Faq />
+        <Clients />
+        {/* <Contribute id='#contribute' accountPair={accountPair} /> */}
+        <Footer />
     </div>
   );
 }
