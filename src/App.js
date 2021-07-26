@@ -17,6 +17,7 @@ import Rewards from './Rewards';
 import Roadmap from './Roadmap';
 import Clients from './clients';
 import Footer from './Footer';
+import Leaderboard from './Leaderboard';
 
 
 function Main () {
@@ -57,7 +58,8 @@ function Main () {
   return (
     <div ref={contextRef}>
       <AccountSelector setAccountAddress={setAccountAddress} />
-        <Why />
+      <Why />
+      <Leaderboard />
         <ThreeBox />
         <How />
         <Participate />
