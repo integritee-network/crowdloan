@@ -83,7 +83,7 @@ export default function Leaderboard () {
           {allDataLoaded
             ? (<div>
               <Slider {...settings}>
-                {Array.from(contributors).map(([key, value]) => <div>{key} <span>{value}</span></div>)}
+                {Array.from(contributors).slice(0, 50).map(([key, value]) => <div>{key} <span>{value}</span></div>)}
               </Slider>
             </div>
             )
