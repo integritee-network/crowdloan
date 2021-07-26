@@ -76,15 +76,6 @@ export default function Leaderboard () {
     }
   }, [allDataLoaded]);
 
-  const numbers = new Map(
-  );
-  numbers.set('man1', 2);
-  numbers.set('man2', 3);
-  numbers.set('man3', 4);
-  // Object.entries(numbers).map(([key, value]) => console.log(key, value));
-  // numbers.forEach((value, key) => {
-  //   console.log(key + " = " + value);
-  // })
   return (
     <div className="why">
       <div className="leaderboard">
