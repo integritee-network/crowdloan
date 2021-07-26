@@ -1,10 +1,10 @@
-import "./css/App.css";
-import { Container, Grid } from "semantic-ui-react";
-import OneImage from "./Images/1.png";
-import TwoImage from "./Images/2.png";
-import ThreeImage from "./Images/3.png";
+import './css/App.css';
+import { Container, Grid } from 'semantic-ui-react';
+import OneImage from './Images/1.png';
+import TwoImage from './Images/2.png';
+import ThreeImage from './Images/3.png';
 
-export default function ThreeBox(props) {
+export default function ThreeBox (props) {
   return (
     <div className="grey-bg">
       <Container>

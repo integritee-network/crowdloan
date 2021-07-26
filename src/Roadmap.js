@@ -1,17 +1,16 @@
-import './css/App.css'
-import { Container, Button, Grid} from 'semantic-ui-react';
+import './css/App.css';
+import { Container, Button, Grid } from 'semantic-ui-react';
 import icon0 from './Images/i0.svg';
 import icon1 from './Images/i1.svg';
 import icon2 from './Images/i2.svg';
 import icon3 from './Images/i3.svg';
 
 export default function Participate () {
-    
-    return (
+  return (
         <div className="roadmap">
             <Container>
                 <div className="text">
-                    <h1>Integritee’s <br /> Roadmap</h1>                    
+                    <h1>Integritee’s <br /> Roadmap</h1>
                 </div>
                 <div className="timeline">
                     <div><ul>
@@ -57,8 +56,8 @@ export default function Participate () {
                     <span>2022 and beyond</span>
                     </div>
                 </div>
-                
+
             </Container>
         </div>
-    )
+  );
 }

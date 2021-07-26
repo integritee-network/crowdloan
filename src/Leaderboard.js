@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Slider from "react-slick";
+import Slider from 'react-slick';
 
 export default function Leaderboard () {
   const [allDataLoaded, setAllDataLoaded] = useState(false);
   const [contributors, setContributors] = useState(new Map());
   const [contributorsUnsorted, setContributorsUnsorted] = useState(new Map());
   const contributorsProperty = new Map();
-  var settings = {
+  const settings = {
     dots: false,
     infinite: true,
     vertical: true,
@@ -15,7 +15,7 @@ export default function Leaderboard () {
     slidesToScroll: 1
   };
 
-  //fetch contributors
+  // fetch contributors
   useEffect(() => {
     function makeApiCall (page) {
       console.log(page);
@@ -45,12 +45,11 @@ export default function Leaderboard () {
         if (contributes !== null) {
           {
             contributes.map(i => {
-              //add accounts and amount contributed
+              // add accounts and amount contributed
               if (!contributorsProperty.has(i.who)) {
                 contributorsProperty.set(i.who, i.contributed * Math.pow(10, -12));
               }
             });
-
           }
         } else {
           console.log('all data filled');

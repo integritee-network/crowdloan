@@ -19,7 +19,6 @@ import Clients from './clients';
 import Footer from './Footer';
 import Leaderboard from './Leaderboard';
 
-
 function Main () {
   const [accountAddress, setAccountAddress] = useState(null);
   const { apiState, keyring, keyringState, apiError } = useSubstrate();

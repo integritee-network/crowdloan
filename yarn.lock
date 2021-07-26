@@ -6097,6 +6097,46 @@ __metadata:
   languageName: node
   linkType: hard
 
+"crowdloan@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "crowdloan@workspace:."
+  dependencies:
+    "@babel/core": ^7.14.3
+    "@polkadot/api": ^4.16.2
+    "@polkadot/extension-dapp": ^0.38.7
+    "@polkadot/keyring": ^6.10.1
+    "@polkadot/networks": ^6.10.1
+    "@polkadot/types": ^4.16.2
+    "@polkadot/ui-keyring": ^0.82.1
+    "@polkadot/ui-settings": ^0.82.1
+    "@polkadot/util": ^6.10.1
+    "@polkadot/util-crypto": ^6.10.1
+    babel-preset-env: ^1.7.0
+    eslint: ^7.20.0
+    eslint-config-semistandard: ^15.0.1
+    eslint-config-standard: ^16.0.2
+    eslint-plugin-import: ^2.22.1
+    eslint-plugin-node: ^11.1.0
+    eslint-plugin-only-warn: ^1.0.2
+    eslint-plugin-promise: ^4.3.1
+    eslint-plugin-standard: ^5.0.0
+    gh-pages: ^3.1.0
+    prop-types: ^15.7.2
+    query-string: ^6.13.5
+    react: ^16.14.0
+    react-app-rewired: ^2.1.8
+    react-copy-to-clipboard: ^5.0.3
+    react-dom: ^16.14.0
+    react-icons: ^4.2.0
+    react-scripts: ^4.0.3
+    react-scroll: ^1.8.2
+    react-slick: ^0.28.1
+    semantic-ui-css: ^2.4.1
+    semantic-ui-react: ^2.0.3
+    semistandard: ^16.0.0
+  languageName: unknown
+  linkType: soft
+
 "crypto-browserify@npm:^3.11.0":
   version: 3.12.0
   resolution: "crypto-browserify@npm:3.12.0"
@@ -9302,46 +9342,6 @@ fsevents@^1.2.7:
   checksum: 62189ce7ea44c5778e757e4232c581212e838f3c39e79d931bb9152fd4b9275f09fb20b96afdd60ba9f5d7996b92486cad6cc617fcb84ff4beedd1b33b86221e
   languageName: node
   linkType: hard
-
-"integritee kusama crowdloan@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "integritee kusama crowdloan@workspace:."
-  dependencies:
-    "@babel/core": ^7.14.3
-    "@polkadot/api": ^4.16.2
-    "@polkadot/extension-dapp": ^0.38.7
-    "@polkadot/keyring": ^6.10.1
-    "@polkadot/networks": ^6.10.1
-    "@polkadot/types": ^4.16.2
-    "@polkadot/ui-keyring": ^0.82.1
-    "@polkadot/ui-settings": ^0.82.1
-    "@polkadot/util": ^6.10.1
-    "@polkadot/util-crypto": ^6.10.1
-    babel-preset-env: ^1.7.0
-    eslint: ^7.20.0
-    eslint-config-semistandard: ^15.0.1
-    eslint-config-standard: ^16.0.2
-    eslint-plugin-import: ^2.22.1
-    eslint-plugin-node: ^11.1.0
-    eslint-plugin-only-warn: ^1.0.2
-    eslint-plugin-promise: ^4.3.1
-    eslint-plugin-standard: ^5.0.0
-    gh-pages: ^3.1.0
-    prop-types: ^15.7.2
-    query-string: ^6.13.5
-    react: ^16.14.0
-    react-app-rewired: ^2.1.8
-    react-copy-to-clipboard: ^5.0.3
-    react-dom: ^16.14.0
-    react-icons: ^4.2.0
-    react-scripts: ^4.0.3
-    react-scroll: ^1.8.2
-    react-slick: ^0.28.1
-    semantic-ui-css: ^2.4.1
-    semantic-ui-react: ^2.0.3
-    semistandard: ^16.0.0
-  languageName: unknown
-  linkType: soft
 
 "internal-ip@npm:^4.3.0":
   version: 4.3.0

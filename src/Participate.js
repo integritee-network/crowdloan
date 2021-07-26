@@ -1,19 +1,19 @@
-import React from "react";
-import "./css/App.css";
-import { Container, Button, Grid } from "semantic-ui-react";
-import icon0 from "./Images/i0.svg";
-import icon1 from "./Images/i1.svg";
-import icon2 from "./Images/i2.svg";
-import icon3 from "./Images/i3.svg";
-import Slider from "react-slick";
+import React from 'react';
+import './css/App.css';
+import { Container, Button, Grid } from 'semantic-ui-react';
+import icon0 from './Images/i0.svg';
+import icon1 from './Images/i1.svg';
+import icon2 from './Images/i2.svg';
+import icon3 from './Images/i3.svg';
+import Slider from 'react-slick';
 
-export default function Participate() {
-  var settings = {
+export default function Participate () {
+  const settings = {
     dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToScroll: 1
   };
   return (
     <div className="participate">
@@ -50,7 +50,7 @@ export default function Participate() {
                   <h2>On this site</h2>
                   <ol>
                     <li>
-                      Download the Polkadot Browser extension for Chrome/Firefox{" "}
+                      Download the Polkadot Browser extension for Chrome/Firefox{' '}
                       <a href="#">here</a>.
                     </li>
                     <li>
@@ -73,7 +73,7 @@ export default function Participate() {
                   <p>
                     If you hold KSM on a crypto exchange, it may provide
                     functionality to participate in Kusama crowdloans from your
-                    user account.{" "}
+                    user account.{' '}
                   </p>
                   <div className="click">
                     Click on one of the exchanges below for more details:

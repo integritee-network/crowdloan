@@ -1,9 +1,9 @@
-import './css/App.css'
-import { Container, Grid} from 'semantic-ui-react';
+import './css/App.css';
+import { Container, Grid } from 'semantic-ui-react';
 import Graphimage from './Images/graph2.png';
 
 export default function Rewards () {
-    return (
+  return (
         <div className="white-bg-2">
             <Container>
                 <div className="text">
@@ -56,5 +56,5 @@ size of the winning bid(s).</p>
                 </div>
             </Container>
         </div>
-    )
+  );
 }

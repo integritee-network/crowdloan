@@ -1,13 +1,11 @@
-import './css/App.css'
-import { Container, Menu} from 'semantic-ui-react';
+import './css/App.css';
+import { Container, Menu } from 'semantic-ui-react';
 import icon0 from './Images/i0.svg';
-import { AiOutlineTwitter } from "react-icons/ai";
-import { GrLinkedinOption } from "react-icons/gr";
-
-
+import { AiOutlineTwitter } from 'react-icons/ai';
+import { GrLinkedinOption } from 'react-icons/gr';
 
 export default function Footer () {
-    return (
+  return (
         <div className="footer">
             <Menu
                 tabular
@@ -52,5 +50,5 @@ export default function Footer () {
                     </div>
                 </Container>
         </div>
-    )
+  );
 }

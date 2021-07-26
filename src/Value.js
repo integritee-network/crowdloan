@@ -1,9 +1,9 @@
-import './css/App.css'
-import { Container, Grid} from 'semantic-ui-react';
+import './css/App.css';
+import { Container, Grid } from 'semantic-ui-react';
 import Graphimage from './Images/graph2.png';
 
 export default function How (props) {
-    return (
+  return (
         <div className="grey-bg-2">
             <Container>
                 <div className="text">
@@ -45,5 +45,5 @@ for Integritee’s services.
                 </div>
             </Container>
         </div>
-    )
+  );
 }

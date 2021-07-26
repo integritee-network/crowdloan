@@ -39,13 +39,13 @@ You can find out how to unstake on the <a href='https://support.polkadot.network
         <h2>FAQ's</h2>
         <Grid>
                     <Grid.Column width={5} className='link'>
-                <button className={`${faqContent == 1 ? 'active': ''}`} onClick={() => setFaqContent(1)}>HOW DOES CROWDLENDING WORK?</button>
-                <button className={`${faqContent == 2 ? 'active': ''}`} onClick={() => setFaqContent(2)}>WHAT WILL I GET FOR MY SUPPORT?</button>
-                <button className={`${faqContent == 3 ? 'active': ''}`} onClick={() => setFaqContent(3)}>HOW LONG WILL THE TOKENS BE LOCKED?</button>
-                        <button className={`${faqContent == 4 ? 'active': ''}`} onClick={() => setFaqContent(4)}>HOW WILL MY KSM BE RETURNED TO ME?</button>
-                <button className={`${faqContent == 5 ? 'active': ''}`} onClick={() => setFaqContent(5)}>WHAT IS UNBONDING?</button>
-                <button className={`${faqContent == 6 ? 'active': ''}`} onClick={() => setFaqContent(6)}>I HAVE KSM ON AN EXCHANGE, DO I NEED TO UNBOND?</button>
-                        <button className={`${faqContent == 7 ? 'active': ''}`} onClick={() => setFaqContent(7)}>WHAT HAPPENS IF INTEGRITEE DOES NOT WIN THE PARACHAIN AUCTION?</button>
+                <button className={`${faqContent == 1 ? 'active' : ''}`} onClick={() => setFaqContent(1)}>HOW DOES CROWDLENDING WORK?</button>
+                <button className={`${faqContent == 2 ? 'active' : ''}`} onClick={() => setFaqContent(2)}>WHAT WILL I GET FOR MY SUPPORT?</button>
+                <button className={`${faqContent == 3 ? 'active' : ''}`} onClick={() => setFaqContent(3)}>HOW LONG WILL THE TOKENS BE LOCKED?</button>
+                        <button className={`${faqContent == 4 ? 'active' : ''}`} onClick={() => setFaqContent(4)}>HOW WILL MY KSM BE RETURNED TO ME?</button>
+                <button className={`${faqContent == 5 ? 'active' : ''}`} onClick={() => setFaqContent(5)}>WHAT IS UNBONDING?</button>
+                <button className={`${faqContent == 6 ? 'active' : ''}`} onClick={() => setFaqContent(6)}>I HAVE KSM ON AN EXCHANGE, DO I NEED TO UNBOND?</button>
+                        <button className={`${faqContent == 7 ? 'active' : ''}`} onClick={() => setFaqContent(7)}>WHAT HAPPENS IF INTEGRITEE DOES NOT WIN THE PARACHAIN AUCTION?</button>
             </Grid.Column>
                     <Grid.Column width={10} className="right-section">
                 {showContent()}
