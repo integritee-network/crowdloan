@@ -253,6 +253,14 @@ body {
   height: auto;
   display: block;
 }
+.why.leaderboard {
+  font-family: 'Gotham Rounded', sans-serif;
+  background: #000065 !important;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;    
+  padding: 0 0 100px;
+}
 .leaderboard h2 {
   font-family: "Gotham Rounded", sans-serif;
   font-size: 44px;
@@ -491,6 +499,19 @@ body {
 .participate .right-section .slick-next::before {
   display: none;
 }
+.participate-tabs > div.active {
+  position: relative;
+}
+.participate-tabs > div.active:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  width: 10px;
+  background: #69d7d2;
+  z-index: 2;
+}
 .participate .right-section:before {
   content: "";
   position: absolute;
@@ -498,15 +519,6 @@ body {
   bottom: 0;
   left: -60px;
   width: 1px;
-  background: #69d7d2;
-}
-.participate .right-section:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 60px;
-  left: -65px;
-  width: 10px;
   background: #69d7d2;
 }
 .participate ol {
@@ -767,16 +779,6 @@ body {
   width: 1px;
   background: #69d7d2;
 }
-.faq .right-section:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 60px;
-  left: -15px;
-  width: 10px;
-  background: #69d7d2;
-}
-
 .faq h1 {
     font-family: "Gotham Rounded", sans-serif;
     font-size: 30px;
@@ -795,6 +797,18 @@ body {
   line-height: 1.4;
   margin-bottom: 10px;
   padding-right: 15px;
+  position: relative;
+  width: 100%;
+}
+.faq button.active:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -9px;
+  width: 10px;
+  background: #70e6da;
+  z-index: 2;
 }
 
 .faq .text {
@@ -899,7 +913,7 @@ body {
   font-weight: 600; 
 }
 .clients .image-holder {
-  max-width: 130px;
+  max-width: 14%;
   margin: 20px 15px;
   display: inline-block;
   vertical-align: top;

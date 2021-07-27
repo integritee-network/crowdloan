@@ -2,7 +2,7 @@ import { Grid, Container } from 'semantic-ui-react';
 import React, { useState } from 'react';
 
 export default function Main (props) {
-  const [faqContent, setFaqContent] = useState();
+  const [faqContent, setFaqContent] = useState(1);
   const showContent = () => {
     switch (faqContent) {
       default: return (<div className="text"><h3>How does crowdlending work?</h3>

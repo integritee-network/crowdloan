@@ -52,45 +52,6 @@ export default function Main (props) {
         <div className="graph">
           <img src={GraphImage} alt="" />
         </div>
-        <div className="leaderboard">
-          <h2>Leaderboard</h2>
-          <div className="sliderdiv">
-            <Slider {...settings}>
-              <div>
-                JBgmTP9EcgF5pU6qgDPo2E1fkUHGwYB278v1j653r45emb9{' '}
-                <span>2800.26</span>
-              </div>
-              <div>
-                JBgmTP9EcgF5pU6qgDPo2E1fkUHGwYB278v1j653r45emb9{' '}
-                <span>1002.85</span>
-              </div>
-              <div>
-                JBgmTP9EcgF5pU6qgDPo2E1fkUHGwYB278v1j653r45emb9{' '}
-                <span>685.20</span>
-              </div>
-              <div>
-                JBgmTP9EcgF5pU6qgDPo2E1fkUHGwYB278v1j653r45emb9{' '}
-                <span>586.35</span>
-              </div>
-              <div>
-                JBgmTP9EcgF5pU6qgDPo2E1fkUHGwYB278v1j653r45emb9{' '}
-                <span>456.87</span>
-              </div>
-              <div>
-                JBgmTP9EcgF5pU6qgDPo2E1fkUHGwYB278v1j653r45emb9{' '}
-                <span>425.32</span>
-              </div>
-              <div>
-                JBgmTP9EcgF5pU6qgDPo2E1fkUHGwYB278v1j653r45emb9{' '}
-                <span>352.25</span>
-              </div>
-              <div>
-                JBgmTP9EcgF5pU6qgDPo2E1fkUHGwYB278v1j653r45emb9{' '}
-                <span>336.52</span>
-              </div>
-            </Slider>
-          </div>
-        </div>
       </Container>
     </div>
   );
