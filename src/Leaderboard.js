@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import Slider from 'react-slick';
+import React, { useState, useEffect } from "react";
+import Slider from "react-slick";
 
-export default function Leaderboard () {
+export default function Leaderboard() {
   const [allDataLoaded, setAllDataLoaded] = useState(false);
   const [contributors, setContributors] = useState(new Map());
   const [contributorsUnsorted, setContributorsUnsorted] = useState(new Map());
@@ -12,47 +12,55 @@ export default function Leaderboard () {
     vertical: true,
     speed: 500,
     slidesToShow: 8,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
 
   // fetch contributors
   useEffect(() => {
-    function makeApiCall (page) {
+    function makeApiCall(page) {
       console.log(page);
-      return fetch('https://kusama.api.subscan.io/api/scan/parachain/contributes'
-        , {
-          method: 'POST',
+      return fetch(
+        "https://kusama.api.subscan.io/api/scan/parachain/contributes",
+        {
+          method: "POST",
           headers: {
-            'Content-Type': 'application/json',
-            'X-API-Key': 'f61b3cd451cee62383692c528215d12c',
-            Accept: 'application/json'
+            "Content-Type": "application/json",
+            "X-API-Key": "f61b3cd451cee62383692c528215d12c",
+            Accept: "application/json",
           },
           body: JSON.stringify({
             row: 100,
             page: page,
             from_history: true,
-            para_id: 2004
-          })
+            para_id: 2004,
+          }),
         }
       );
     }
 
-    async function processUsers () {
+    async function processUsers() {
       let result;
       for (let i = 0; i < 150; i++) {
-        result = await makeApiCall(i).then(res => res.json());
-        if (result && result.data && result.data.contributes !== undefined) { var contributes = result.data.contributes; }
+        result = await makeApiCall(i).then((res) => res.json());
+        if (result && result.data && result.data.contributes !== undefined) {
+          var contributes = result.data.contributes;
+        }
         if (contributes !== null) {
           {
-            contributes.map(i => {
+            contributes.map((i) => {
               // add accounts and amount contributed
               if (!contributorsProperty.has(i.who)) {
-                contributorsProperty.set(i.who, i.contributed * Math.pow(10, -12));
+                contributorsProperty.set(
+                  i.who,
+                  i.contributed * Math.pow(10, -12)
+                );
               }
             });
+            setContributorsUnsorted(contributorsProperty);
+            setAllDataLoaded(true);
           }
         } else {
-          console.log('all data filled');
+          console.log("all data filled");
           setContributorsUnsorted(contributorsProperty);
           setAllDataLoaded(true);
           break;
@@ -60,7 +68,7 @@ export default function Leaderboard () {
       }
     }
 
-    async function doTask () {
+    async function doTask() {
       await processUsers();
     }
     doTask();
@@ -69,7 +77,9 @@ export default function Leaderboard () {
   useEffect(() => {
     if (allDataLoaded) {
       // sort by value
-      const mapSort = new Map([...contributorsUnsorted.entries()].sort((a, b) => b[1] - a[1]));
+      const mapSort = new Map(
+        [...contributorsUnsorted.entries()].sort((a, b) => b[1] - a[1])
+      );
       // console.log("sortedMap", mapSort);
       setContributors(mapSort);
     }
@@ -80,15 +90,21 @@ export default function Leaderboard () {
       <div className="leaderboard">
         <h2>Leaderboard</h2>
         <div className="sliderdiv">
-          {allDataLoaded
-            ? (<div>
+          {allDataLoaded ? (
+            <div>
               <Slider {...settings}>
-                {Array.from(contributors).slice(0, 50).map(([key, value]) => <div>{key} <span>{value}</span></div>)}
+                {Array.from(contributors)
+                  .slice(0, 50)
+                  .map(([key, value]) => (
+                    <div>
+                      {key} <span>{value}</span>
+                    </div>
+                  ))}
               </Slider>
             </div>
-            )
-            : <p>loading</p>
-          }
+          ) : (
+            <p>loading</p>
+          )}
         </div>
       </div>
     </div>
