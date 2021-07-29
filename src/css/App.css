@@ -153,7 +153,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 120px auto 0;
+  margin: 120px auto 100px;
   max-width: 600px;
 }
 .why .counter li {
@@ -1090,5 +1090,207 @@ body {
   }
   .roadmap .timeline > div {
     flex: auto;
+  }
+  .ui.menu.main-menu .right.menu {
+    padding: 0;
+  }
+  .footer .main-menu {
+    flex-direction: column;
+  }
+  .footer .ui.menu.main-menu .logo {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+  .footer .ui.menu.main-menu .right.menu {
+    flex-direction: column;
+  }
+  .footer .part-btn-holder {
+    justify-content: flex-start;
+    width: 100%;
+    display: block;
+  }
+  .footer .primary.button {
+    display: block;
+    width: 100%;
+  }
+  .footer .footer-bottom {
+    flex-direction: column;
+  }
+  .footer .footer-bottom .social {
+    border-bottom: 1px solid #70e6da;
+    padding: 10px;
+  }
+  .footer .footer-bottom .bottom-nav ul {
+    padding: 10px 0;
+  }
+  .footer .footer-bottom .bottom-nav li {
+    padding: 0 20px;
+  }
+  .footer .footer-bottom .bottom-nav li + li {
+    border: none;
+  }
+}
+.toggle-btn {
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .toggle-btn {
+    display: block;
+    background: #5fc5c3;
+    align-self: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000065;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  .ui.menu.main-menu .logo {
+    width: 160px;
+    margin-left: 15px;
+  }
+  .why {
+    font-size: 14px;
+  }
+  .why h1 {
+    font-size: 34px;
+  }
+  .why, .roadmap {
+    padding: 50px 0;
+  }
+  .why .counter {
+    text-align: left;
+    margin: 80px 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .why .counter li + li {
+    margin-top: 30px;
+  }
+  .why .counter li:before {
+    display: none;
+  }
+  .toggle-menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #fff;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s all ease;
+  }
+  .toggle-menu.open {
+    top: 72px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s all ease;
+  }
+  .why.leaderboard {
+    position: relative;
+    top: -1px;
+  }
+  .white-bg-2,
+  .participate,
+  .white-bg,
+  .grey-bg-2,
+  .faq,
+  .grey-bg {
+    font-size: 14px;
+    padding: 50px 0;
+  }
+  .white-bg-2 h2,
+  .participate h1,
+  .participate h2,
+  .grey-bg-2 h2,
+  .white-bg h2,
+  .faq h2,
+  .grey-bg h2,
+  .roadmap h1 {
+    font-size: 30px;
+  }
+  .faq button {
+    font-size: 14px;
+  }
+  .roadmap .timeline > div {
+    margin-bottom: 30px;
+  }
+  .clients .image-holder {
+    max-width: 40%;
+    margin: 0px 15px;
+  }
+  .white-bg-2 .main .text + .text {
+    margin: 0;
+  }
+  .white-bg-2 .main .cal-box.other,
+  .white-bg-2 .main .cal-box {
+    font-size: 14px;
+  }
+  .participate-tabs > div.active:after {
+    display: none;
+  }
+  .participate .image-holder {
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 30px;
+    margin-right: 10px;
+  }
+  .participate .image-holder img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .participate ol {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 30px;
+    padding: 0 0 0 15px;
+  }
+  .participate .form .boxes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .participate .form input {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .participate .gradient-btn {
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+  }
+  .participate .right-section .slick-next {
+    top: 100%;
+    left: auto;
+    right: 20px;
+  }
+  .participate .right-section .slick-prev {
+    top: 100%;
+    left: 20px;
+    right: auto;
+  }
+  .participate .right-section .click,
+  .participate .right-section {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .participate .right-section .image-holder {
+    flex-direction: row;
+    margin: auto;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .participate .right-section .image-holder .images {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .leaderboard .sliderdiv {
+    max-width: 280px; 
   }
 }

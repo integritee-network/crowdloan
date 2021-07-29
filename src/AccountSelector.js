@@ -19,6 +19,7 @@ function Main (props) {
   const { keyring } = useSubstrate();
   const { setAccountAddress } = props;
   const [accountSelected, setAccountSelected] = useState('');
+  const [toggleMenuFun, setToggleMenuFun] = useState(false);
 
   // Get the list of accounts we possess the private key for
   const keyringOptions = keyring.getPairs().map(account => ({
@@ -57,7 +58,7 @@ function Main (props) {
         <Menu.Menu className="logo">
           <img src={logo} width={200} />
         </Menu.Menu>
-        <Menu.Menu position='right'>
+        <Menu.Menu position='right' className={`toggle-menu ${toggleMenuFun ? "open" : ""}`}>
           <Menu.Item
             name='Crowdloan Campaign'
             href="#crowdloan"
@@ -113,6 +114,9 @@ function Main (props) {
           <BalanceAnnotation accountSelected={accountSelected} />
         </Menu.Menu> */}
       </Container>
+      <div className='toggle-btn' onClick={() => setToggleMenuFun(!toggleMenuFun)}>
+        {toggleMenuFun ? "Close" : "Menu"}
+      </div>
     </Menu>
   );
 }
