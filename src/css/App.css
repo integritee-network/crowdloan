@@ -507,10 +507,12 @@ body {
 .participate .right-section .slick-next::before {
   display: none;
 }
-.participate-tabs > div.active {
+
+.participate-tabs .slick-current .main {
   position: relative;
+  cursor: pointer;
 }
-.participate-tabs > div.active:after {
+.participate-tabs .slick-current .main:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1134,6 +1136,9 @@ body {
   display: none;
   cursor: pointer;
 }
+.left-slider {
+  height: 460px;
+}
 @media screen and (max-width: 767px) {
   .toggle-btn {
     display: block;
@@ -1150,8 +1155,22 @@ body {
     width: 160px;
     margin-left: 15px;
   }
+  .left-slider {
+    height: 300px;
+  }
+  .participate-tabs .slick-current .main:after {
+    left: 0;
+    right: auto;
+  }
+  .participate-tabs .main {
+    padding-left: 30px;
+    margin-bottom: 30px;
+  }
   .why {
     font-size: 14px;
+  }
+  .video-box {
+    width: 100%;
   }
   .why h1 {
     font-size: 34px;
@@ -1237,7 +1256,7 @@ body {
     width: 20%;
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     margin-right: 10px;
   }
   .participate .image-holder img {

@@ -10,21 +10,23 @@ import Slider from "react-slick";
 import { setActiveLink } from "react-scroll/modules/mixins/scroller";
 
 export default function Participate() {
-  const [oldSlide, setOldSlide] = useState(0);
-  const [activeSlide, setActiveSlide] = useState(0);
-  const [activeSlide2, setActiveSlide2] = useState(0);
 
+  const [nav1, setNav1] = useState(null)
+  const [nav2, setNav2] = useState(null)
+    let slider1 = []
+    let slider2 = []
+
+    useEffect(() => {
+      setNav1(slider1)
+      setNav2(slider2)
+  }, [slider1, slider2])
   const settings = {
     dots: false,
+    dotsClass: "slick-dots slick-thumb",
     infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    beforeChange: (current, next) => {
-      setOldSlide(current);
-      setActiveSlide(next);
-    },
-    afterChange: (current) => setActiveSlide2(current),
   };
   return (
     <div className="participate" id="participate">
@@ -36,33 +38,50 @@ export default function Participate() {
         <Grid>
           <Grid.Row>
             <Grid.Column width={5} className="participate-tabs">
-              <div className={`${activeSlide2 == 0 ? "active" : ""}`}>
-                <span>ON THIS SITE</span>
-                <div className="image-holder">
-                  <img src={icon0} />
+              <Slider
+                {...settings}
+                className="left-slider"
+                asNavFor={nav1}
+                ref={slider => (slider2 = slider)}
+                slidesToShow={3}
+                vertical="true"
+                swipeToSlide={true}
+                focusOnSelect={true}
+              >
+                <div>
+                  <div className="main">
+                    <span>ON THIS SITE</span>
+                    <div className="image-holder">
+                      <img src={icon0} />
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className={`${activeSlide2 == 1 ? "active" : ""}`}>
-                <span>THROUGH AN EXCHANGE</span>
-                <div className="image-holder">
-                  <img src={icon1} />
+                <div>
+                  <div className="main">
+                    <span>THROUGH AN EXCHANGE</span>
+                    <div className="image-holder">
+                      <img src={icon1} />
+                    </div>
+                    <div className="image-holder">
+                      <img src={icon2} />
+                    </div>
+                    <div className="image-holder">
+                      <img src={icon3} />
+                    </div>
+                  </div>
                 </div>
-                <div className="image-holder">
-                  <img src={icon2} />
+                <div>
+                  <div className="main">
+                    <span>USING POLKADOT-JS APPS</span>
+                    <div className="image-holder">
+                      <img src={icon4} />
+                    </div>
+                  </div>
                 </div>
-                <div className="image-holder">
-                  <img src={icon3} />
-                </div>
-              </div>
-              <div className={`${activeSlide2 == 2 ? "active" : ""}`}>
-                <span>USING POLKADOT-JS APPS</span>
-                <div className="image-holder">
-                  <img src={icon4} />
-                </div>
-              </div>
+              </Slider>
             </Grid.Column>
             <Grid.Column className="right-section" width={10}>
-              <Slider {...settings}>
+              <Slider {...settings} asNavFor={nav2} ref={slider => (slider1 = slider)}>
                 <div>
                   <h2>On this site</h2>
                   <ol>
@@ -117,13 +136,7 @@ export default function Participate() {
                   </ol>
                   <div className="video-box">
                     <div className="video-placeholder">
-                      <iframe
-                        src="https://www.youtube.com/watch?v=YrTxDufrcQM"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        title="Embedded youtube"
-                      />
+                      <iframe src="https://www.youtube.com/embed/YrTxDufrcQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>

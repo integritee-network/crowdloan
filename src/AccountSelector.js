@@ -36,6 +36,7 @@ function Main (props) {
   useEffect(() => {
     setAccountAddress(initialAddress);
     setAccountSelected(initialAddress);
+    scroll();
   }, [setAccountAddress, initialAddress]);
 
   const onChange = address => {
@@ -45,7 +46,15 @@ function Main (props) {
   };
 
   const scroll = () => {
-    document.getElementById('contribute').scrollIntoView();
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+  
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
   };
 
   return (
