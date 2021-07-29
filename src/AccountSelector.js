@@ -50,7 +50,8 @@ function Main (props) {
   return (
     <Menu
       tabular
-      className="main-menu"
+      className="main-menu" 
+      id="main-nav"
     >
       <Container>
         <Menu.Menu className="logo">
@@ -59,18 +60,23 @@ function Main (props) {
         <Menu.Menu position='right'>
           <Menu.Item
             name='Crowdloan Campaign'
+            href="#crowdloan"
+          />
+
+          <Menu.Item
+            name='TEER Token'
+            href="#TeerToken"
           />
           <Menu.Item
-            name='Particpate'
+            name='FAQ'
+            href="#FAQ"
           />
-          <Menu.Item
-            name='About'
-          />
-          <Menu.Item
-            name='Contact'
-          />
-          <a className="ui primary button" href="#contribute">Participate Now!</a>
+          
+          <a className="ui primary button" href="#participate">Participate Now!</a>
         </Menu.Menu>
+
+        
+
         {/* <Menu.Menu position='right' style={{ alignItems: 'center' }}>
           { !accountSelected
             ? <span>

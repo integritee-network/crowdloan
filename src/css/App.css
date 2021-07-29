@@ -37,6 +37,13 @@ body {
   padding: 18px 0;
   margin: 0 !important;
   border: none !important;
+  position: sticky; 
+  top: 0; 
+}
+#main-nav {
+  background-color: #fff;
+  z-index: 1000;
+  border-bottom: 1px solid #000065 !important;
 }
 .main-menu .item {
   font-family: "Nunito Sans", sans-serif !important;
@@ -46,8 +53,9 @@ body {
 }
 .ui.menu.main-menu .right.menu {
   margin-left: 0 !important;    
-  justify-content: space-between;
+  justify-content: space-evenly !important;
   width: 100%;
+  
 }
 .ui.menu.main-menu .logo {
   width: 200px;
@@ -949,6 +957,7 @@ body {
 }
 .footer .ui.tabular.menu .item {
   color: #fff !important;
+  
 }
 .footer .primary.button {
   background: #70e6da;
@@ -970,6 +979,22 @@ body {
 .footer .footer-bottom .bottom-nav li {
   font-family: "Gotham Rounded";
   color: #fff;
+}
+.footer .footer-bottom .bottom-nav a {
+  font-family: "Gotham Rounded";
+  color: #fff;
+}
+.ui.tabular.menu .item:hover {
+  /* text-decoration: underline; */
+  /* border-bottom: solid 2px #70e6da; */
+  
+}
+.footer .footer-bottom .bottom-nav a:hover {
+  font-family: "Gotham Rounded";
+  color: #70e6da;
+}
+.footer .ui.tabular.menu a:hover{
+  color: #70e6da !important;
 }
 .footer .footer-bottom .bottom-nav li + li {
   border-left: 1px solid #70e6da;

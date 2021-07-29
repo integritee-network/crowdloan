@@ -4,7 +4,7 @@ import Graphimage from './Images/graph2.png';
 
 export default function Rewards () {
   return (
-        <div className="white-bg-2">
+        <div className="white-bg-2" id="TeerToken">
             <Container>
                 <div className="text">
                     <Grid>

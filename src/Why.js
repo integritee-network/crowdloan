@@ -16,7 +16,7 @@ export default function Main (props) {
     <div className="why">
       <Container>
         <div className="text">
-          <span>WHY OUR PARACHAIN</span>
+          <span>WHY OUR PARACHAIN?</span>
           <h1>Support Integritee’s Parachain Bids</h1>
           <p>
             Integritee enables developers and firms to process sensitive data,
@@ -37,7 +37,11 @@ export default function Main (props) {
             is the solution. Help us build a new internet where privacy comes as
             standard and earn TEER in the process.
           </p>
-          <Button className="outline-btn with-icon">Back Integritee!</Button>
+          <a href="#participate"> 
+          <Button className="outline-btn with-icon">
+            Participate Now!
+            </Button>
+            </a>
         </div>
         <ul className="counter">
           <li>

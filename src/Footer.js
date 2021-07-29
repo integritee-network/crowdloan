@@ -1,8 +1,12 @@
 import './css/App.css';
 import { Container, Menu } from 'semantic-ui-react';
 import icon0 from './Images/i0.svg';
+import mediumlogo from './Images/Medium-Logo.png';
+import elementlogo from './Images/element.png';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { GrLinkedinOption } from 'react-icons/gr';
+import { FaTelegramPlane } from 'react-icons/fa';
+
 
 export default function Footer () {
   return (
@@ -18,15 +22,15 @@ export default function Footer () {
                     <Menu.Menu position='right'>
                     <Menu.Item
                         name='Crowdloan Campaign'
+                        href="#crowdloan"
                     />
                     <Menu.Item
-                        name='Particpate'
-                    />
-                    <Menu.Item
-                        name='About'
+                        name='TEER Token'
+                        href="#TeerToken"
                     />
                     <Menu.Item
                         name='FAQ'
+                        href="#FAQ"
                     />
                     </Menu.Menu>
                 </Container>
@@ -38,14 +42,18 @@ export default function Footer () {
                 <Container className="footer-bottom">
                     <div className="social">
                         <ul>
-                            <li><AiOutlineTwitter /></li>
-                            <li><GrLinkedinOption /></li>
+                            <li><a target="_blank" href="https://twitter.com/integri_t_e_e"><AiOutlineTwitter /> </a> </li>
+                            <li> <a target="_blank" href="https://www.linkedin.com/company/integritee/"><GrLinkedinOption /> </a> </li>
+                            <li><a target="_blank" href="https://t.me/Integritee_Official"><FaTelegramPlane/> </a> </li>
+                            <li> <a target="_blank" href="https://medium.com/integritee"><img src={mediumlogo} width={20} /> </a> </li>
+                            {/* <li> <a target="_blank" href="https://app.element.io/#/room/#integritee-watercooler:matrix.org"><img src={elementlogo} width={20} /> </a> </li> */}
+                    
                         </ul>
                     </div>
                     <div className="bottom-nav">
                         <ul>
-                            <li>Impressum</li>
-                            <li>Privacy Policy</li>
+                            <li> <a  href="https://www.integritee.network/privacy-policy">Impressum</a> </li>
+                            <li> <a  href="https://www.integritee.network/privacy-policy">Privacy Policy</a> </li>
                         </ul>
                     </div>
                 </Container>

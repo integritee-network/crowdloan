@@ -17,8 +17,8 @@ export default function How (props) {
                             </p>
                             <p>
                             Integritee users will require TEER to pay for our privacy-preserving data services. Given the growing consumer and regulatory pressure to protect user
-privacy, technologies like Integritee are rapidly becoming essential for firms. Thus, TEER has an intrinsic value which will be directly linked to demand
-for Integritee’s services.
+                            privacy, technologies like Integritee are rapidly becoming essential for firms. Thus, TEER has an intrinsic value which will be directly linked to demand
+                            for Integritee’s services.
                             </p>
                             <div className="main">
                             <div className="text">
@@ -33,7 +33,7 @@ for Integritee’s services.
                             <p>Third-party developers can use our scalable, second-layer side
                             chains to host their projects. Integritee will offer proportional discounts in fees to projects which lock in TEER on the Integritee
                             parachain. This will slow down token velocity, further stimulating
-                            token value</p>
+                            token value.</p>
                             </div>
                             <div className="image">
                             <img src={Graphimage} alt="" />

@@ -17,7 +17,7 @@ export default function How (props) {
                             decentralized networks to achieve strength in numbers by pooling
                             security resources. Integritee plans to use the shared security and
                             public auditability of Kusama to power our privacy-preserving data
-                            services
+                            services.
                             </p>
                             <p>
                             Kusama parachains are leased in slots (lasting 6 weeks each up to a
@@ -27,9 +27,8 @@ export default function How (props) {
                             to their KSM once the lease period ends.
                             </p>
                             <p>
-                            Integritee aims to secure its first Kusama parachain by bidding for
-                            slots in the <strong>8-12 range</strong>. We will be rewarding KSM holders who
-                            support Integritee bids with TEER.
+                            Integritee will begin bidding to secure its first Kusama parachain during the second batch of slot auctions.
+                            We will be rewarding KSM holders who support Integritee bids with TEER.
                             </p>
                         </Grid.Column>
                         <Grid.Column>

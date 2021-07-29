@@ -27,7 +27,7 @@ export default function Participate() {
     afterChange: (current) => setActiveSlide2(current),
   };
   return (
-    <div className="participate">
+    <div className="participate" id="participate">
       <Container>
         <div className="text">
           <span>3 WAYS TO TAKE PART</span>
@@ -118,7 +118,7 @@ export default function Participate() {
                   <div className="video-box">
                     <div className="video-placeholder">
                       <iframe
-                        src="https://www.youtube.com/embed/nWwpyclIEu4"
+                        src="https://www.youtube.com/watch?v=YrTxDufrcQM"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen

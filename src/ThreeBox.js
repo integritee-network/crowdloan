@@ -6,20 +6,20 @@ import ThreeImage from './Images/3.png';
 
 export default function ThreeBox (props) {
   return (
-    <div className="grey-bg">
+    <div className="grey-bg" id="crowdloan">
       <Container>
         <div className="text">
-          <span>WHY INTEGRITEE ?</span>
+          <span>WHY INTEGRITEE?</span>
           <h2>
             Powering data-driven <br /> services where privacy comes as standard
           </h2>
-          <p className="main-para">
+          {/* <p className="main-para">
             Integritee enables firms and developers to build broader, fairer,
             and more secure data platforms. It is a hardware-enabled
             confidential computing solution that provides a trustworthy and
             adaptable alternative to centralized data-driven products and
             services
-          </p>
+          </p> */}
           <Grid>
             <Grid.Row columns={3}>
               <Grid.Column>
