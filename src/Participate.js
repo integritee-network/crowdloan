@@ -130,7 +130,7 @@ export default function Participate() {
                   <h2>Using Polkadot-JS Apps</h2>
                   <ol>
                     <li>
-                      Navigate to: <a href="#">polkadot.js.org/apps/</a>.
+                      Navigate to: <a href="https://polkadot.js.org/apps/">polkadot.js.org/apps/</a>.
                     </li>
                     <li>Follow the instructions detailed in this video:</li>
                   </ol>
