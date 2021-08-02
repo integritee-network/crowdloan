@@ -37,7 +37,7 @@ export default function Footer () {
                 </Menu>
 
                 <Container className="part-btn-holder">
-              <a className="ui primary button" href="#participate">Participate Now!</a>
+              <a className="ui primary gradient-btn button" href="#participate">Participate Now!</a>
                 </Container>
                 <Container className="footer-bottom">
                     <div className="social">

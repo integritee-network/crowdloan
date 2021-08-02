@@ -143,7 +143,7 @@ export default function Main (props) {
             standard and earn TEER in the process.
           </p>
           <a href="#participate"> 
-          <Button className="outline-btn with-icon">
+          <Button className="gradient-btn with-icon">
             Participate Now!
             </Button>
             </a>

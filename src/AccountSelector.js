@@ -82,7 +82,7 @@ function Main (props) {
             href="#FAQ"
           />
           
-          <a className="ui primary button" href="#participate">Participate Now!</a>
+          <a className="ui primary gradient-btn button" href="#participate">Participate Now!</a>
         </Menu.Menu>
 
         
