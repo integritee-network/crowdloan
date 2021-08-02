@@ -61,13 +61,14 @@ function Main () {
       <Leaderboard />
         <ThreeBox />
         <How />
-        <Participate />
+      <Participate accountPair={accountPair} />
+      {/* <Contribute id='#contribute' accountPair={accountPair} /> */}
         <Rewards />
         <Value />
         <Roadmap />
         <Faq />
         <Clients />
-        {/* <Contribute id='#contribute' accountPair={accountPair} /> */}
+
         <Footer />
     </div>
   );

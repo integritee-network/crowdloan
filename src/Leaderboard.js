@@ -18,7 +18,7 @@ export default function Leaderboard() {
   // fetch contributors
   useEffect(() => {
     function makeApiCall(page) {
-      console.log(page);
+      // console.log(page);
       return fetch(
         "https://kusama.api.subscan.io/api/scan/parachain/contributes",
         {

@@ -9,7 +9,70 @@ import icon4 from "./Images/polkadot.png";
 import Slider from "react-slick";
 import { setActiveLink } from "react-scroll/modules/mixins/scroller";
 
-export default function Participate() {
+import { Form, Input } from 'semantic-ui-react';
+import { TxButton } from './substrate-lib/components';
+import { useSubstrate } from './substrate-lib';
+
+export default function Participate (props) {
+
+  const [status, setStatus] = useState(null);
+  const [formState, setFormState] = useState({ addressTo: null, amount: 0 });
+  const { accountPair } = props;
+  const [disableButton, setDisableButton] = useState(true);
+  const [crowdLoanEnded, setCrowdLoanEnded] = useState(false)
+  const { api } = useSubstrate();
+  const [blockNumber, setBlockNumber] = useState(0);
+  const [crowdLoanData, setCrowdLoanData] = useState({});
+  const { amount } = formState;
+  const paraId = '2015';
+
+  const bestNumber = api.derive.chain.bestNumber;
+
+  useEffect(() => {
+    let unsubscribeAll = null;
+    bestNumber(number => {
+      setBlockNumber(number.toNumber());
+    })
+      .then(unsub => {
+        unsubscribeAll = unsub;
+      })
+      .catch(console.error);
+
+    return () => unsubscribeAll && unsubscribeAll();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [bestNumber]);
+
+  //disable contribution if crowdfunding has already ended: Enable this codeblock when going live
+  // useEffect(() => {
+  //   if (blockNumber >= crowdLoanData.end && blockNumber > 0 && crowdLoanData && Object.keys(crowdLoanData).length !== 0) {
+  //     setDisableButton(true);
+  //     setCrowdLoanEnded(true)
+  //     setStatus('crowdloan has ended');
+  //   }
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [blockNumber]);
+
+  useEffect(() => {
+    const queryResHandler = result => {
+      setCrowdLoanData(result.toJSON());
+    };
+    const crowdLoan = async () => {
+      await api.query.crowdloan.funds(['2004'], queryResHandler);
+    };
+    crowdLoan();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const onChange = (_, data) => {
+    setFormState(prev => ({ ...prev, [data.state]: data.value }));
+    if (!crowdLoanEnded) {
+      if (data.value === '' || data.value <= 0 || data.value < 0.1) {
+        setDisableButton(true);
+      } else {
+        setDisableButton(false);
+      }
+    }
+  };
 
   const [nav1, setNav1] = useState(null)
   const [nav2, setNav2] = useState(null)
@@ -99,10 +162,31 @@ export default function Participate() {
                   <div className="form mb-5">
                     <div className="boxes">
                       <label>KSM to Lock Up:</label>
-                      <input text="tel" placeholder="Enter KSM Amount" />
+                      <Input
+                        text="tel"
+                        type="number"
+                        min={0.1}
+                        value={amount}
+                        state='amount'
+                        placeholder="Enter KSM Amount"
+                        onChange={onChange} />
                     </div>
                   </div>
-                  <Button className="gradient-btn">Participate Now</Button>
+                  {/* <Button className="gradient-btn">Participate Now</Button> */}
+                  <TxButton
+                    accountPair={accountPair}
+                    label='Participate Now'
+                    type='SIGNED-TX'
+                    setStatus={setStatus}
+                    attrs={{
+                      palletRpc: 'crowdloan',
+                      callable: 'contribute',
+                      inputParams: [paraId, amount * Math.pow(10, 12), null],
+                      paramFields: [true, true, false],
+                      disableButton: disableButton
+                    }}
+                  />
+                  <div style={{ overflowWrap: 'break-word' }}>{status}</div>
                 </div>
                 <div>
                   <h2>Through an Exchange</h2>
