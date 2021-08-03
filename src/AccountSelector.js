@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 // import { ReactComponent as Logo } from './css/IntegriteeLogoAndSlogan.svg';
 import logo from './css/IntegriteeLogoAndSlogan.svg';
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+
 
 import {
   Menu,
@@ -124,7 +126,7 @@ function Main (props) {
         </Menu.Menu> */}
       </Container>
       <div className='toggle-btn' onClick={() => setToggleMenuFun(!toggleMenuFun)}>
-        {toggleMenuFun ? "Close" : "Menu"}
+        {toggleMenuFun ? <AiOutlineClose /> : <AiOutlineMenu />}
       </div>
     </Menu>
   );

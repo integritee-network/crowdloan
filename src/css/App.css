@@ -957,7 +957,7 @@ body {
   justify-content: space-between;
 }
 .footer .ui.menu.main-menu .logo {
-  width: 400px;
+  width: 165px;
 }
 .footer .ui.menu.main-menu .right.menu {
   width: auto;
@@ -1099,7 +1099,10 @@ body {
     flex: auto;
   }
   .ui.menu.main-menu .right.menu {
-    padding: 0;
+    padding: 20px;
+  }
+  .ui.menu.main-menu .right.menu a {
+    padding: 10px 0;
   }
   .footer .main-menu {
     flex-direction: column;
@@ -1118,7 +1121,8 @@ body {
   }
   .footer .primary.button {
     display: block;
-    width: 100%;
+    width: 95%;
+    margin: auto;
   }
   .footer .footer-bottom {
     flex-direction: column;
@@ -1147,10 +1151,9 @@ body {
 @media screen and (max-width: 767px) {
   .toggle-btn {
     display: block;
-    background: #5fc5c3;
     align-self: center;
-    padding: 10px;
-    font-size: 14px;
+    padding: 0;
+    font-size: 24px;
     font-weight: 600;
     color: #000065;
     border-radius: 6px;
@@ -1209,7 +1212,7 @@ body {
     transition: 0.3s all ease;
   }
   .toggle-menu.open {
-    top: 72px;
+    top: 66px;
     opacity: 1;
     visibility: visible;
     transition: 0.3s all ease;
