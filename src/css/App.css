@@ -574,6 +574,7 @@ body {
   font-family: "Gotham Rounded";
   font-style: italic;
   color: #fff;
+  letter-spacing: 1px;
 }
 .participate .form input::-webkit-input-placeholder {
   color: #fff;

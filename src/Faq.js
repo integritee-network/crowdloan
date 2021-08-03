@@ -22,11 +22,11 @@ export default function Main (props) {
                 <p>Bonded KSM tokens will be locked for a total of 48 weeks, the duration of the lease.</p></div>);
       case 4: return (<div className="text"><h3>How will my KSM be returned to me?</h3>
                 <p>All KSM tokens are automatically released to their owners at the end of the lease period. They never leave your custody. This process works directly between contributors and the Kusama Network.</p></div>);
-      case 5: return (<div className="text"><h3>What is unbounding?</h3>
+      case 5: return (<div className="text"><h3>What is unbonding?</h3>
                 <p>KSM tokens that are currently staked need to be unbonded (unstaked) before they can be bonded to a new crowd loan. There is a delayed exit period of 7 days during which tokens cannot be transferred to a new bond.
 You can find out how to unstake on the <a href='https://support.polkadot.network/support/solutions/articles/65000167902-how-can-i-unstake-my-tokens-again-'>Polkadot wiki</a>.
 </p></div>);
-      case 6: return (<div className="text"><h3>I have KSM on an exchange, do I need to unbound?</h3>
+      case 6: return (<div className="text"><h3>I have KSM on an exchange, do I need to unbond?</h3>
                 <p>The process depends on the exchange – contact them to find out how to participate, or see instructions on <a href='https://www.kraken.com/learn/parachain-auctions'>Kraken</a> and <a href='https://medium.com/kucoinexchange/kucoin-supports-the-kusama-parachain-slot-auction-5cc1793a2dfe'>KuCoin</a>. If your exchange does not support nomination directly, you will need to unbond your KSM tokens and transfer them to Polkadot.js. </p></div>);
       case 7: return (<div className="text"><h3>What happens if Integritee does not win the parachain auction?</h3>
                 <p>Integritee will continue to bid in subsequent auctions until it has won a lease, or until six weeks after the beginning of the crowd loan period. If that happens all KSM tokens will be released to their owners.</p></div>);
@@ -36,7 +36,7 @@ You can find out how to unstake on the <a href='https://support.polkadot.network
   return (<div className='faq' id="FAQ">
         <Container>
             <div className="text" >
-        <h2>FAQ's</h2>
+        <h2>FAQs</h2>
         <Grid>
                     <Grid.Column width={5} className='link'>
                 <button className={`${faqContent == 1 ? 'active' : ''}`} onClick={() => setFaqContent(1)}>HOW DOES CROWDLENDING WORK?</button>
