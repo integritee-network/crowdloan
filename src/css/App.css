@@ -1099,10 +1099,13 @@ body {
     flex: auto;
   }
   .ui.menu.main-menu .right.menu {
-    padding: 20px;
+    padding: 20px 15px;
   }
   .ui.menu.main-menu .right.menu a {
     padding: 10px 0;
+  }
+  .ui.menu.main-menu .primary.button {
+    width: 210px;
   }
   .footer .main-menu {
     flex-direction: column;
@@ -1121,8 +1124,7 @@ body {
   }
   .footer .primary.button {
     display: block;
-    width: 95%;
-    margin: auto;
+    width: 210px;
   }
   .footer .footer-bottom {
     flex-direction: column;
