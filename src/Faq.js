@@ -7,10 +7,9 @@ export default function Main (props) {
     switch (faqContent) {
       default: return (<div className="text"><h3>How does crowdlending work?</h3>
                 <p>Kusama parachain slots are leased, for a limited period, via slot auctions. Projects bid for
-                auction slots with collateral in the form of KSM tokens. Crowdlending is one way for bid
-                ders to raise the collateral they need to win a slot. Integritee supporters can “lend” their
+                auction slots with collateral in the form of KSM tokens. Crowdlending is one way for bidders to raise the collateral they need to win a slot. Integritee supporters can “lend” their
                 tokens – in a process called bonding, staking, or nominating – to help the company achieve
-                its go Kusama.</p><p>Lenders (or “nominators”) never cede custody of their tokens; the bids are merely locked for the
+                its goal of occupying slots on Kusama.</p><p>Lenders (or “nominators”) never cede custody of their tokens; the bids are merely locked for the
                 duration of the lease, and released in full at the end of the period. Integritee will never get access
                 to your wallet or tokens and will never hold any contributions. This process works directly between contributors and the Kusama Network.</p></div>);
       case 2: return (<div className="text"><h3>What will I get for my support?</h3>
