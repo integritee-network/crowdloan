@@ -14,13 +14,13 @@ export default function Participate () {
                 </div>
                 <div className="timeline">
                     <div><ul>
-                        <li>Encointer whitepaper release.</li>
+                      <li>Encointer whitepaper release, sketching a privacy solution with TEEs.</li>
                         <li>Beginning of the SubstraTEE journey.</li>
                     </ul> <span>2018</span></div>
                     <div>
                     <ul>
-                        <li>First public demonstration of private token transactions.</li>
-                        <li>Secured Web3 grants to develop transaction privacy using Intel SGX, and Substrate Rust API.</li>
+                          <li>First public demonstration of private off-chain execution.</li>
+                          <li>Secured Web3 grants to develop SubstraTEE using Intel SGX, and Substrate Rust API client.</li>
                     </ul>
                     <span>2019</span>
                     </div>

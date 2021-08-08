@@ -18,7 +18,7 @@ export default function Main (props) {
                 Your KSM contribution / total KSM contributions * 1,000,000
 </p></div>);
       case 3: return (<div className="text"><h3>How long will the tokens be locked?</h3>
-                <p>Bonded KSM tokens will be locked for a total of 48 weeks, the duration of the lease.</p></div>);
+            <p>Bonded KSM tokens will be locked for a total of 48 weeks, the duration of the lease if Integritee wins a slot. If Integritee does not win one of the auctions during the crowdloan campaign, the KSM will be released by the end of the crowdloan campain. </p></div>);
       case 4: return (<div className="text"><h3>How will my KSM be returned to me?</h3>
                 <p>All KSM tokens are automatically released to their owners at the end of the lease period. They never leave your custody. This process works directly between contributors and the Kusama Network.</p></div>);
       case 5: return (<div className="text"><h3>What is unbonding?</h3>
@@ -28,7 +28,7 @@ You can find out how to unstake on the <a href='https://support.polkadot.network
       case 6: return (<div className="text"><h3>I have KSM on an exchange, do I need to unbond?</h3>
                 <p>The process depends on the exchange – contact them to find out how to participate, or see instructions on <a href='https://www.kraken.com/learn/parachain-auctions'>Kraken</a> and <a href='https://medium.com/kucoinexchange/kucoin-supports-the-kusama-parachain-slot-auction-5cc1793a2dfe'>KuCoin</a>. If your exchange does not support nomination directly, you will need to unbond your KSM tokens and transfer them to Polkadot.js. </p></div>);
       case 7: return (<div className="text"><h3>What happens if Integritee does not win the parachain auction?</h3>
-                <p>Integritee will continue to bid in subsequent auctions until it has won a lease, or until six weeks after the beginning of the crowd loan period. If that happens all KSM tokens will be released to their owners.</p></div>);
+            <p>Integritee will continue to bid in subsequent auctions until it has won a lease, or until the end of our crowdloan campaign. If that happens all KSM tokens will be released to their owners.</p></div>);
     }
   };
 

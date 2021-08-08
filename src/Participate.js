@@ -153,10 +153,7 @@ export default function Participate (props) {
                       <a href="#">here</a>.
                     </li>
                     <li>
-                      Ensure that you have KSM in your Polkadot.js account.
-                    </li>
-                    <li>
-                      Unbond your KSM. See further details <a href="#">here</a>.
+                      Ensure that you have unbonded KSM in your Polkadot.js account.
                     </li>
                   </ol>
                   <div className="form mb-5">
