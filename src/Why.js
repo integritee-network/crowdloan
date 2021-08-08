@@ -2,11 +2,33 @@ import './css/App.css';
 import { Container, Button } from 'semantic-ui-react';
 import GraphImage from './Images/graph.png';
 import Slider from 'react-slick';
+import { useSubstrate } from './substrate-lib';
+import React, { useEffect, useState } from 'react';
 
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
 export default function Main (props) {
+  const { api } = useSubstrate();
+  let [crowdLoan, setCrowdLoan] = useState({
+  });
+
+  const queryResHandler = result => {
+    const toHumanData = result.toHuman();
+    setCrowdLoan(crowdLoan = (toHumanData));
+  };
+  const transformed = ['2004'];
+  const palletRpc = 'crowdloan';
+  const callable = 'funds';
+
+  const getCrowdLoanData = async () => {
+    await api.query[palletRpc][callable](...transformed, queryResHandler);
+  };
+
+  if (Object.keys(crowdLoan).length === 0) {
+    getCrowdLoanData();
+  }
+
   const settings = {
     dots: false,
     infinite: true,
@@ -150,12 +172,8 @@ export default function Main (props) {
         </div>
         <ul className="counter">
           <li>
-            <span>PARTICIPANTS</span>
-            16’508
-          </li>
-          <li>
             <span>KSM CONTRIBUTED</span>
-            588’904
+            {crowdLoan.raised}
           </li>
         </ul>
         <div className="graph">
