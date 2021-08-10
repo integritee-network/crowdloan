@@ -3,7 +3,7 @@ import { Container, Dimmer, Loader, Grid, Sticky, Message } from 'semantic-ui-re
 import 'semantic-ui-css/semantic.min.css';
 import { SubstrateContextProvider, useSubstrate } from './substrate-lib';
 
-import AccountSelector from './AccountSelector';
+import UpperMenu from './UpperMenu';
 import Contribute from './Contribute';
 import Crowdloan from './Crowdloan';
 import Why from './Why';
@@ -56,12 +56,12 @@ function Main () {
 
   return (
     <div ref={contextRef}>
-      <AccountSelector setAccountAddress={setAccountAddress} />
+      <UpperMenu setAccountAddress={setAccountAddress} />
       <Why />
       <Leaderboard />
         <ThreeBox />
         <How />
-      <Participate accountPair={accountPair} />
+      <Participate />
       {/* <Contribute id='#contribute' accountPair={accountPair} /> */}
         <Rewards />
         <Value />

@@ -12,12 +12,13 @@ import { setActiveLink } from "react-scroll/modules/mixins/scroller";
 import { Form, Input } from 'semantic-ui-react';
 import { TxButton } from './substrate-lib/components';
 import { useSubstrate } from './substrate-lib';
+import AccountSelector from "./AccountSelector";
 
 export default function Participate (props) {
 
   const [status, setStatus] = useState(null);
   const [formState, setFormState] = useState({ addressTo: null, amount: 0 });
-  const { accountPair } = props;
+  // const { accountPair } = props;
   const [disableButton, setDisableButton] = useState(true);
   const [crowdLoanEnded, setCrowdLoanEnded] = useState(false)
   const { api } = useSubstrate();
@@ -27,6 +28,9 @@ export default function Participate (props) {
   const paraId = '2015';
 
   const bestNumber = api.derive.chain.bestNumber;
+
+
+  const [accountAddress, setAccountAddress] = useState(null);
 
   useEffect(() => {
     let unsubscribeAll = null;
@@ -41,6 +45,12 @@ export default function Participate (props) {
     return () => unsubscribeAll && unsubscribeAll();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bestNumber]);
+
+  const { apiState, keyring, keyringState, apiError } = useSubstrate();
+  const accountPair =
+    accountAddress &&
+    keyringState === 'READY' &&
+    keyring.getPair(accountAddress);
 
   //disable contribution if crowdfunding has already ended: Enable this codeblock when going live
   // useEffect(() => {
@@ -119,7 +129,7 @@ export default function Participate (props) {
                     </div>
                   </div>
                 </div>
-                <div>
+                {/* <div>
                   <div className="main">
                     <span>THROUGH AN EXCHANGE</span>
                     <div className="image-holder">
@@ -132,7 +142,7 @@ export default function Participate (props) {
                       <img src={icon3} />
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div>
                   <div className="main">
                     <span>USING POLKADOT-JS APPS</span>
@@ -169,7 +179,7 @@ export default function Participate (props) {
                         onChange={onChange} />
                     </div>
                   </div>
-                  {/* <Button className="gradient-btn">Participate Now</Button> */}
+                  <AccountSelector setAccountAddress={setAccountAddress} />
                   <TxButton
                     accountPair={accountPair}
                     label='Participate Now'
@@ -185,7 +195,7 @@ export default function Participate (props) {
                   />
                   <div style={{ overflowWrap: 'break-word' }}>{status}</div>
                 </div>
-                <div>
+                {/* <div>
                   <h2>Through an Exchange</h2>
                   <p>
                     If you hold KSM on a crypto exchange, it may provide
@@ -206,7 +216,7 @@ export default function Participate (props) {
                       <img src={icon3} />
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div>
                   <h2>Using Polkadot-JS Apps</h2>
                   <ol>

@@ -51,45 +51,22 @@ function Main (props) {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
           e.preventDefault();
-  
+
           document.querySelector(this.getAttribute('href')).scrollIntoView({
               behavior: 'smooth'
           });
       });
-  });
+    });
   };
 
   return (
     <Menu
       tabular
-      className="main-menu" 
+          className="main-menu"
       id="main-nav"
     >
       <Container>
-        <Menu.Menu className="logo">
-          <img src={logo} width={200} />
-        </Menu.Menu>
-        <Menu.Menu position='right' className={`toggle-menu ${toggleMenuFun ? "open" : ""}`}>
-          <Menu.Item
-            name='Crowdloan Campaign'
-            href="#crowdloan"
-          />
-
-          <Menu.Item
-            name='TEER Token'
-            href="#TeerToken"
-          />
-          <Menu.Item
-            name='FAQ'
-            href="#FAQ"
-          />
-          
-          <a className="ui primary gradient-btn button" href="#participate">Participate Now!</a>
-        </Menu.Menu>
-
-        
-
-        {/* <Menu.Menu position='right' style={{ alignItems: 'center' }}>
+              <Menu.Menu position='right' style={{ alignItems: 'center' }}>
           { !accountSelected
             ? <span>
               Add your account with the{' '}
@@ -123,7 +100,7 @@ function Main (props) {
             value={accountSelected}
           />
           <BalanceAnnotation accountSelected={accountSelected} />
-        </Menu.Menu> */}
+              </Menu.Menu>
       </Container>
       <div className='toggle-btn' onClick={() => setToggleMenuFun(!toggleMenuFun)}>
         {toggleMenuFun ? <AiOutlineClose /> : <AiOutlineMenu />}
@@ -156,8 +133,8 @@ function BalanceAnnotation (props) {
 
   return accountSelected
     ? <Label pointing='left'>
-        <Icon name='money' color='green' />
-        {accountBalance}
+          <Icon name='money' color='green' />
+          {accountBalance}
       </Label>
     : null;
 }
