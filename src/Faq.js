@@ -18,7 +18,7 @@ export default function Main (props) {
                 Your KSM contribution / total KSM contributions * 1,000,000
 </p></div>);
       case 3: return (<div className="text"><h3>How long will the tokens be locked?</h3>
-            <p>Bonded KSM tokens will be locked for a total of 48 weeks, the duration of the lease if Integritee wins a slot. If Integritee does not win one of the auctions during the crowdloan campaign, the KSM will be released by the end of the crowdloan campain. </p></div>);
+            <p>Bonded KSM tokens will be locked for a total of 48 weeks, the duration of the lease if Integritee wins a slot. If Integritee does not win one of the auctions during the crowdloan campaign, the KSM will be released by the end of the crowdloan campaign. </p></div>);
       case 4: return (<div className="text"><h3>How will my KSM be returned to me?</h3>
                 <p>All KSM tokens are automatically released to their owners at the end of the lease period. They never leave your custody. This process works directly between contributors and the Kusama Network.</p></div>);
       case 5: return (<div className="text"><h3>What is unbonding?</h3>

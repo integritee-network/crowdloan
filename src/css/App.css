@@ -51,6 +51,7 @@ body {
   font-size: 13px;
   font-weight: 600 !important;
   color: #000065 !important;
+  
 }
 .ui.menu.main-menu .right.menu {
   margin-left: 0 !important;    
@@ -90,6 +91,7 @@ body {
   font-weight: 600;
   margin: 0 0 10px;
   display: block;
+  
 }
 .why h1 {
   font-family: "Gotham Rounded", sans-serif;
@@ -115,10 +117,10 @@ body {
   font-size: 18px;
   min-width: 220px;
   text-align: left;
-  font-family: "Gotham Rounded", sans-serif;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
   font-weight: 600;
   color: #fff;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 .why .outline-btn.with-icon {
   position: relative;
@@ -133,6 +135,28 @@ body {
   transform: rotate(-90deg);
   top: 9px;
   right: 20px;
+}
+.why .outline-btn:hover,
+.why .outline-btn:focus {
+  background: linear-gradient(90deg, rgb(84 191 188) 0%, rgba(105,217,211,1) 100%) !important;
+  color: #000065 !important;
+}
+.notify-modal .ui.green.button {
+  background: rgb(100,154,177) !important;
+  background: linear-gradient(90deg, rgb(84 191 188) 0%, rgba(105,217,211,1) 100%) !important;
+  color: #000065;
+  min-width: 120px;
+  font-size: 15px;
+  border-radius: 8px !important;
+  padding: 15px 25px;
+}
+.notify-modal .ui.grey.button {
+  background: #f2f2f2 !important;
+  color: #000;
+  min-width: 120px;
+  font-size: 15px;
+  border-radius: 8px !important;
+  padding: 15px 25px;
 }
 .why .gradient-btn {
   font-size: 20px;
@@ -319,7 +343,8 @@ body {
   height: 45px;
   background: url(../Images/up.svg) no-repeat;
   background-size: 13px;
-  top: 75px;
+  top: 120px;
+  right: -40px !important;
 }
 .leaderboard .slick-prev {
   width: 20px;
@@ -327,8 +352,9 @@ body {
   background: url(../Images/down.svg) no-repeat;
   background-size: 13px;
   top: 145px;
-  right: -25px;
+  right: -35px !important;
   left: auto;
+  visibility: hidden;
 }
 .leaderboard .slick-prev:hover,
 .leaderboard .slick-prev:focus {
@@ -361,11 +387,19 @@ body {
 }
 .participate span {
   font-family: "Gotham Rounded", sans-serif;
-  color: #70e6da;
+  color: #70e6da ;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 600 !important;
   margin: 0 0 10px;
   display: block;
+  
+  
+}
+
+.participate .visible.menu.transition {
+  /* background-color: #70e6da !important; */
+  background: linear-gradient(90deg, rgb(84 191 188) 0%, rgba(105,217,211,1) 100%) !important;
+  color: #000065 !important;
 }
 .participate .right-section {
   font-size: 18px;
@@ -423,7 +457,7 @@ body {
   line-height: 1.6;
   margin-bottom: 20px;
 }
-.participate .outline-btn {
+.outline-btn {
   border: 2px solid #537ba1;
   border-radius: 10px;
   padding: 15px 25px;
@@ -438,6 +472,7 @@ body {
   color: #fff;
   margin-top: 60px;
 }
+.
 .participate .gradient-btn {
   background: rgb(100,154,177) !important;
   background: linear-gradient(90deg, rgba(100,154,177,1) 0%, rgba(105,217,211,1) 100%) !important;
@@ -454,8 +489,14 @@ body {
   font-weight: 600;
   color: #000065;
 }
+.participate .gradient-btn.disabled {
+  opacity: 0.8 !important;
+  background: rgb(100,154,177) !important;
+  background: linear-gradient(90deg, rgba(100,154,177,1) 0%, rgba(105,217,211,1) 100%) !important;
+  cursor: pointer;
+}
 .participate .five.wide.column span {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .participate .image-holder {
   margin-bottom: 30px;
@@ -471,7 +512,21 @@ body {
 .participate .right-section {
   position: relative;
 }
-
+.participate .five .slick-slide {
+  height: 200px;
+}
+.participate .five .slick-slide > div {
+  height: 200px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.participate .five .main > div {
+  height: 200px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 .participate .right-section .slick-next {
   width: 20px;
   height: 45px;
@@ -479,8 +534,9 @@ body {
   background-size: 13px;
   top: 100%;
   left: 60px;
-  right: 0;
+  right: 0px;
   transform: rotate(90deg);
+  
 }
 .participate .right-section .slick-prev {
   width: 20px;
@@ -488,9 +544,72 @@ body {
   background: url(../Images/down.svg) no-repeat;
   background-size: 13px;
   top: 100%;
-  left: 0;
+  left: 7px;
   right: auto;
   transform: rotate(90deg);
+}
+.participate #main-nav {
+  background: #000065;
+  border: 1px solid #19198e !important;
+  border-radius: 10px;
+  margin-top: 30px !important;
+  margin-bottom: 15px !important;
+  box-shadow: 0 2px 10px #0c0c63 !important;
+}
+.participate .ui.menu.main-menu .right.menu {
+  justify-content: space-between !important;
+  padding: 0 20px;
+}
+.participate .ui.menu.main-menu .right.menu button.icon {
+  color: #fff !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: 0 0 0 1px #69d7d2 inset!important;;
+}
+.participate .right.menu span {
+  margin-bottom: 0;
+  color: #fff;
+  font-weight: normal;
+}
+.participate .right.menu .text {
+  width: 100%;
+}
+.participate .right.menu a {
+  display: block;
+  font-weight: bold;
+  color: #69d7d2;
+}
+.participate .ui.search.dropdown {
+  width: 400px;
+  background: #19197c;
+  color: #fff;
+  border: 1px solid #35918d !important;
+}
+.participate .ui.menu .ui.dropdown .menu>.selected.item,
+.participate .ui.menu .ui.dropdown .menu>.active.item {
+  background: #000065 !important;
+  border-top: 1px solid #000065 !important;
+  border-radius: 0 !important;
+}
+.participate .ui.search.dropdown .icon {
+  color: #fff;
+}
+.participate .ui.search.dropdown > .text {
+  width: 100%;
+  color: #fff !important;
+  font-weight: 600;
+}
+.participate .ui.search .menu > div {
+  background: #000065 !important;
+  display: flex;
+}
+.participate .ui.left.pointing.label {
+  background: #19197c;
+  color: #fff;
+  font-size: 15px;
+}
+.participate i.green.icon {
+  color: #69d7d2 !important;
 }
 .participate .right-section .slick-prev:hover,
 .participate .right-section .slick-prev:focus {
@@ -570,11 +689,15 @@ body {
   border: 1px solid #35918d;
   padding: 18px;
   border-radius: 14px;
-  text-align: right;
+  text-align: center;
   font-family: "Gotham Rounded";
-  font-style: italic;
+  font-weight: 600 !important;
   color: #fff;
   letter-spacing: 1.9px;
+}
+.participate .form input:focus {
+  background: transparent;
+  color: #fff;
 }
 .participate .form input::-webkit-input-placeholder {
   color: #fff;
@@ -617,6 +740,7 @@ body {
   font-weight: 600;
   margin: 0 0 10px;
   display: block;
+  
 }
 .grey-bg-2 h2 {
   font-family: "Gotham Rounded", sans-serif;
@@ -1042,6 +1166,10 @@ body {
   width: 100%;
   position: absolute;
 }
+.polkadot_status{
+  margin-top: 5px;
+  margin-left: 40px;
+}
 @media screen and (max-width: 992px) {
   .why .text {
     width: 100%;
@@ -1220,6 +1348,8 @@ body {
     visibility: visible;
     transition: 0.3s all ease;
   }
+
+
   .why.leaderboard {
     position: relative;
     top: -1px;
@@ -1293,6 +1423,10 @@ body {
     margin: 10px 0;
     display: block;
     width: 100%;
+  }
+  .polkadot_status {
+    margin-top: 5px;
+    margin-left: 195px;
   }
   .participate .right-section .slick-next {
     top: 100%;

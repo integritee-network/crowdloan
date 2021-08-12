@@ -105,7 +105,7 @@ export default function Participate (props) {
     <div className="participate" id="participate">
       <Container>
         <div className="text">
-          <span>3 WAYS TO TAKE PART</span>
+          <span>2 WAYS TO TAKE PART</span>
           <h1>Participate in the Integritee Crowdloan!</h1>
         </div>
         <Grid>
@@ -123,9 +123,11 @@ export default function Participate (props) {
               >
                 <div>
                   <div className="main">
-                    <span>ON THIS SITE</span>
-                    <div className="image-holder">
-                      <img src={icon0} />
+                    <div>
+                      <span>ON THIS SITE</span>
+                      <div className="image-holder">
+                        <img src={icon0} />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -145,9 +147,11 @@ export default function Participate (props) {
                 </div> */}
                 <div>
                   <div className="main">
-                    <span>USING POLKADOT-JS APPS</span>
-                    <div className="image-holder">
-                      <img src={icon4} />
+                    <div>
+                      <span>USING POLKADOT-JS APPS</span>
+                      <div className="image-holder">
+                        <img src={icon4} />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -160,12 +164,17 @@ export default function Participate (props) {
                   <ol>
                     <li>
                       Download the Polkadot Browser extension for Chrome/Firefox{" "}
-                      <a href="#">here</a>.
+                      <a href="https://polkadot.js.org/extension/">here</a>.
                     </li>
                     <li>
                       Ensure that you have unbonded KSM in your Polkadot.js account.
                     </li>
                   </ol>
+            
+                  <AccountSelector className="accounts-section" setAccountAddress={setAccountAddress} />
+           
+                  <div className={"polkadot_status"}>{status}</div>
+
                   <div className="form mb-5">
                     <div className="boxes">
                       <label>KSM to Lock Up:</label>
@@ -179,7 +188,7 @@ export default function Participate (props) {
                         onChange={onChange} />
                     </div>
                   </div>
-                  <AccountSelector setAccountAddress={setAccountAddress} />
+                  <br></br>
                   <TxButton
                     accountPair={accountPair}
                     label='Participate Now'
@@ -193,8 +202,10 @@ export default function Participate (props) {
                       disableButton: disableButton
                     }}
                   />
-                  <div style={{ overflowWrap: 'break-word' }}>{status}</div>
+
                 </div>
+
+                
                 {/* <div>
                   <h2>Through an Exchange</h2>
                   <p>

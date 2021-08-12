@@ -18,6 +18,8 @@ import Roadmap from './Roadmap';
 import Clients from './clients';
 import Footer from './Footer';
 import Leaderboard from './Leaderboard';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Main () {
   const [accountAddress, setAccountAddress] = useState(null);
@@ -56,6 +58,17 @@ function Main () {
 
   return (
     <div ref={contextRef}>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={true}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable={false}
+        pauseOnHover={false}
+      />
       <UpperMenu setAccountAddress={setAccountAddress} />
       <Why />
       <Leaderboard />
