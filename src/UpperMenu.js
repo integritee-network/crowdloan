@@ -67,7 +67,7 @@ function Main (props) {
     >
       <Container>
         <Menu.Menu className="logo">
-         <a href="https://www.integritee.network/"> <img src={logo} width={200} /></a> 
+         <a > <img src={logo} width={200} /></a> 
         </Menu.Menu>
         <Menu.Menu position='right' className={`toggle-menu ${toggleMenuFun ? "open" : ""}`}>
           <Menu.Item

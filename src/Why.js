@@ -196,15 +196,13 @@ export default function Main (props) {
             is the solution. Help us build a new internet where privacy comes as
             standard and earn TEER in the process.
           </p>
-          <p>
-          Crowdlending will start soon – sign up to hear when it’s time to join in.
-          </p>
+          
           <a href="#participate"> 
-          <Button className="gradient-btn with-icon">
+          <Button className="ui primary gradient-btn button">
             Get Ready!
             </Button>
             </a>
-            <Modal
+            {/* <Modal
               onClose={() => setOpen(false)}
               onOpen={() => setOpen(true)}
               size="mini"
@@ -213,7 +211,7 @@ export default function Main (props) {
               trigger={<Button className="outline-btn with-icon">
               Get Notified
               </Button>}
-            >
+            > 
               <Modal.Header>Notify Me</Modal.Header>
               <Modal.Content image>
                 <Modal.Description>
@@ -237,14 +235,33 @@ export default function Main (props) {
                   onClick={() => sendEmail()}
                 />
               </Modal.Actions>
-            </Modal>
+            </Modal> */}
         </div>
-        <ul className="counter">
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+        <div className="NewsLetter">
+
+        <p>
+          
+          Crowdlending will start soon – sign up to hear when it’s time to join in.
+          </p>
+          <div className="child">
+          <a href="https://mailchi.mp/integritee/get-notified"> 
+          <Button className="outline-btn with-icon">
+              Get Notified
+              </Button>
+            </a>
+          </div>
+         
+        </div>
+        {/* <ul className="counter">
           <li>
             <span>KSM CONTRIBUTED</span>
             {crowdLoan.raised}
           </li>
-        </ul>
+        </ul> */}
         {/* <div className="graph">
           <HighchartsReact
               highcharts={Highcharts}

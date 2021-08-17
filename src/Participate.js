@@ -102,7 +102,7 @@ export default function Participate (props) {
     slidesToScroll: 1,
   };
   return (
-    <div className="participate" id="participate">
+    <div disabled className="participate" id="participate">
       <Container>
         <div className="text">
           <span>2 WAYS TO TAKE PART</span>
@@ -167,7 +167,9 @@ export default function Participate (props) {
                       <a href="https://polkadot.js.org/extension/">here</a>.
                     </li>
                     <li>
-                      Ensure that you have unbonded KSM in your Polkadot.js account.
+                      Ensure that you have&nbsp; 
+                      <a href="https://guide.kusama.network/docs/maintain-guides-how-to-unbond/">
+                         unbonded</a> KSM in your Polkadot.js account.
                     </li>
                   </ol>
             

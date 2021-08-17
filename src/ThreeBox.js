@@ -55,7 +55,7 @@ export default function ThreeBox (props) {
                   <div className="icon">
                     <img src={ThreeImage} alt="" />
                   </div>
-                  <h3>Trustworthy</h3>
+                  <h3>Easy To Adopt</h3>
                   <p>
                     Integritee can be easily adopted by both blockchain
                     developers and enterprise clients. Third-party developers

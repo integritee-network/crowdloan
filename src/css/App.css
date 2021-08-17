@@ -107,6 +107,34 @@ body {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+
+.why .NewsLetter {
+  background-color: #75E6DA !important;
+  text-align: center !important;
+  border-radius: 10px;
+
+}
+.why .NewsLetter a {
+  text-align: center;
+}
+
+.why .child {
+  display: flex;
+  justify-content: center;
+}
+.why .NewsLetter p {
+  font-family: "Gotham Rounded", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #000563;
+    margin: 0 0 20px;
+    padding-top: 15px;
+}
+
+.why .NewsLetter button {
+  background-color: #000563;
+}
+
 .why .outline-btn {
   border: 2px solid #537ba1;
   border-radius: 10px;
@@ -182,9 +210,32 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 120px auto 100px;
+  margin: 120px auto 50px;
   max-width: 600px;
 }
+
+.white-bg .howparachain img {
+  margin-top: 150px;
+
+}
+
+div[disabled]
+{
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.childnew a {
+  text-decoration: underline !important;
+  color: #000065 !important;
+  font-weight: 600 !important;
+}
+.childnew a:hover {
+  text-decoration: underline !important;
+  color: #70e6da !important;
+  font-weight: 600 !important;
+}
+
 .why .counter li {
   flex: 1;
   font-size: 44px;
@@ -472,7 +523,9 @@ body {
   color: #fff;
   margin-top: 60px;
 }
-.
+
+
+
 .participate .gradient-btn {
   background: rgb(100,154,177) !important;
   background: linear-gradient(90deg, rgba(100,154,177,1) 0%, rgba(105,217,211,1) 100%) !important;
