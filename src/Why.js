@@ -241,7 +241,7 @@ export default function Main (props) {
 <br></br>
 <br></br>
 <br></br>
-        <div className="NewsLetter">
+        <div className="NewsLetter1">
 
         <p>
           

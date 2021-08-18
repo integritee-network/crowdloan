@@ -102,6 +102,26 @@ export default function Participate (props) {
     slidesToScroll: 1,
   };
   return (
+    
+    <div className="participatesection">
+
+
+
+        <div className="NewsLetter">
+
+        <p>
+          
+          Crowdlending will start soon – sign up to hear when it’s time to join in.
+          </p>
+          <div className="child">
+          <a href="https://mailchi.mp/integritee/get-notified"> 
+          <button id="participatebutton"  className="outline-btn with-icon">Get Notified</button>
+            </a>
+          </div>
+     
+        
+        </div>
+
     <div disabled className="participate" id="participate">
       <Container>
         <div className="text">
@@ -249,6 +269,7 @@ export default function Participate (props) {
           </Grid.Row>
         </Grid>
       </Container>
+    </div>
     </div>
   );
 }
