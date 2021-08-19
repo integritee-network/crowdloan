@@ -21,6 +21,10 @@ export default function Footer () {
                     </Menu.Menu>
                     <Menu.Menu position='right'>
                     <Menu.Item
+                        name='Home Page'
+                        href="https://www.integritee.network"
+                    />
+                    <Menu.Item
                         name='Crowdloan Campaign'
                         href="#crowdloan"
                     />

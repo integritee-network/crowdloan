@@ -102,7 +102,27 @@ export default function Participate (props) {
     slidesToScroll: 1,
   };
   return (
-    <div className="participate" id="participate">
+    
+    <div className="participatesection">
+
+
+
+        <div className="NewsLetter">
+
+        <p>
+          
+          Crowdlending will start soon – sign up to hear when it’s time to join in.
+          </p>
+          <div className="child">
+          <a href="https://mailchi.mp/integritee/get-notified"> 
+          <button id="participatebutton"  className="outline-btn with-icon">Get Notified</button>
+            </a>
+          </div>
+     
+        
+        </div>
+
+    <div disabled className="participate" id="participate">
       <Container>
         <div className="text">
           <span>2 WAYS TO TAKE PART</span>
@@ -167,7 +187,9 @@ export default function Participate (props) {
                       <a href="https://polkadot.js.org/extension/">here</a>.
                     </li>
                     <li>
-                      Ensure that you have unbonded KSM in your Polkadot.js account.
+                      Ensure that you have&nbsp; 
+                      <a href="https://guide.kusama.network/docs/maintain-guides-how-to-unbond/">
+                         unbonded</a> KSM in your Polkadot.js account.
                     </li>
                   </ol>
             
@@ -247,6 +269,7 @@ export default function Participate (props) {
           </Grid.Row>
         </Grid>
       </Container>
+    </div>
     </div>
   );
 }
