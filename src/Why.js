@@ -256,18 +256,20 @@ export default function Main (props) {
           </div>
          
         </div>
-        {/* <ul className="counter">
+        <ul className="counter">
           <li>
             <span>KSM CONTRIBUTED</span>
             {crowdLoan.raised}
           </li>
-        </ul> */}
-        {/* <div className="graph">
+        </ul>
+        <br></br>
+        <br></br>
+        <div className="graph">
           <HighchartsReact
               highcharts={Highcharts}
               options={options}
             />
-        </div> */}
+        </div>
       </Container>
     </div>
   );

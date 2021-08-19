@@ -146,8 +146,8 @@ body {
 }
 
 .why.leaderboard {
-  display: none;
-  visibility: hidden;
+  /* display: none;
+  visibility: hidden; */
 }
 .NewsLetter p {
   font-family: "Gotham Rounded", sans-serif !important;
@@ -780,14 +780,17 @@ div[disabled]
 .participate .five .slick-slide {
   height: 200px;
 }
+.participate .five .main .onthissiteicon {
+  height: 76px !important;
+}
 .participate .five .slick-slide > div {
-  height: 200px;
+  height: 75px;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
 .participate .five .main > div {
-  height: 200px;
+  height: 30px;
   justify-content: center;
   display: flex;
   flex-direction: column;

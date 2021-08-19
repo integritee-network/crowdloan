@@ -84,9 +84,9 @@ export default function Main (props) {
             style={{ width: 200, maginTop: '0px' }}
             alt="website logo"
           /> */}
-          <Kraken position='left' style={{ width: '200' }} />
+          {/* <Kraken position='left' style={{ width: '200' }} />
           <Kucoin position='left' style={{ width: '200' }} />
-          <Okex position='left' style={{ width: '200' }} />
+          <Okex position='left' style={{ width: '200' }} /> */}
         </Grid.Column>
         <Grid.Column style={{ padding: '0' }} id='contribute' width={8}>
           <h1 style={{ marginTop: 40 }}>On this site</h1>
@@ -94,7 +94,7 @@ export default function Main (props) {
           <p>2. Ensure that you have KSM in your Polkadot.js account.</p>
           <p>3. Unbond your KSM. See further details here.</p>
           <Form>
-        <Form.Field>
+        {/* <Form.Field>
           <Input
             fluid
             label='KSM To Lock Up'
@@ -106,8 +106,8 @@ export default function Main (props) {
             min={0.1}
             onChange={onChange}
           />
-        </Form.Field>
-        <Form.Field style={{ textAlign: 'left' }}>
+        </Form.Field> */}
+        {/* <Form.Field style={{ textAlign: 'left' }}>
           <TxButton
             accountPair={accountPair}
             label='Participate Now!'
@@ -121,13 +121,13 @@ export default function Main (props) {
               disableButton: disableButton
             }}
           />
-        </Form.Field>
+        </Form.Field> */}
         <div style={{ overflowWrap: 'break-word' }}>{status}</div>
           </Form>
         </Grid.Column>
       </Grid>
       </div>
-    </div>
+    </div> 
   );
 }
 

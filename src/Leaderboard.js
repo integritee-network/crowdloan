@@ -88,11 +88,11 @@ export default function Leaderboard() {
   return (
     <div className="why leaderboard">
       <div className="leaderboard">
-        {/* <h2>Leaderboard</h2> */}
+        <h2>Leaderboard</h2>
         <div className="sliderdiv">
           {allDataLoaded ? (
             <div>
-              {/* <Slider {...settings}>
+              <Slider {...settings}>
                 {Array.from(contributors)
                   .slice(0, 50)
                   .map(([key, value]) => (
@@ -100,7 +100,7 @@ export default function Leaderboard() {
                       {key} <span>{value}</span>
                     </div>
                   ))}
-              </Slider> */}
+              </Slider>
             </div>
           ) : (
             <p>loading</p>

@@ -106,7 +106,7 @@ export default function Participate (props) {
     <div className="participatesection">
 
 
-
+{/* 
         <div className="NewsLetter">
 
         <p>
@@ -120,12 +120,12 @@ export default function Participate (props) {
           </div>
      
         
-        </div>
+        </div> */}
 
-    <div disabled className="participate" id="participate">
+    <div className="participate" id="participate">
       <Container>
         <div className="text">
-          <span>2 WAYS TO TAKE PART</span>
+          <span>3 WAYS TO TAKE PART</span>
           <h1>Participate in the Integritee Crowdloan!</h1>
         </div>
         <Grid>
@@ -143,7 +143,7 @@ export default function Participate (props) {
               >
                 <div>
                   <div className="main">
-                    <div>
+                    <div class="onthissiteicon">
                       <span>ON THIS SITE</span>
                       <div className="image-holder">
                         <img src={icon0} />
@@ -151,7 +151,7 @@ export default function Participate (props) {
                     </div>
                   </div>
                 </div>
-                {/* <div>
+                <div>
                   <div className="main">
                     <span>THROUGH AN EXCHANGE</span>
                     <div className="image-holder">
@@ -164,7 +164,7 @@ export default function Participate (props) {
                       <img src={icon3} />
                     </div>
                   </div>
-                </div> */}
+                </div>
                 <div>
                   <div className="main">
                     <div>
@@ -228,7 +228,7 @@ export default function Participate (props) {
                 </div>
 
                 
-                {/* <div>
+                <div>
                   <h2>Through an Exchange</h2>
                   <p>
                     If you hold KSM on a crypto exchange, it may provide
@@ -249,7 +249,7 @@ export default function Participate (props) {
                       <img src={icon3} />
                     </div>
                   </div>
-                </div> */}
+                </div>
                 <div>
                   <h2>Using Polkadot-JS Apps</h2>
                   <ol>
