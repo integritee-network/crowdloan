@@ -239,9 +239,8 @@ export default function Main (props) {
         </div>
 <br></br>
 <br></br>
-<br></br>
-<br></br>
-        <div className="NewsLetter1">
+
+        {/* <div className="NewsLetter1">
 
         <p>
           
@@ -255,23 +254,22 @@ export default function Main (props) {
             </a>
           </div>
          
-        </div>
-        {/*
+        </div> */}
+       
         <ul className="counter">
           <li>
             <span>KSM CONTRIBUTED</span>
             {crowdLoan.raised}
           </li>
         </ul>
-        <br></br>
-        <br></br>
-        <div className="graph">
+        
+        {/* <div className="graph">
           <HighchartsReact
               highcharts={Highcharts}
               options={options}
             />
-        </div>
-        */}
+        </div> */}
+       
       </Container>
     </div>
   );

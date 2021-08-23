@@ -122,29 +122,12 @@ export default function Participate (props) {
         
         </div> */}
 
-    <div className="participate" id="participate">
+<div className="participate" id="participate">
       <Container>
         <div className="text">
-          <span>3 WAYS TO TAKE PART</span>
+          <span>2 WAYS TO TAKE PART</span>
           <h1>Participate in the Integritee Crowdloan!</h1>
         </div>
-        <div className="NewsLetter1">
-
-        <p>
-          
-          Crowdlending will start soon – sign up to hear when it’s time to join in.
-          </p>
-          <div className="child">
-          <a href="https://mailchi.mp/integritee/get-notified"> 
-          <Button className="outline-btn with-icon">
-              Get Notified
-              </Button>
-            </a>
-          </div>
-         
-        </div>
-
-        {/*
         <Grid>
           <Grid.Row>
             <Grid.Column width={5} className="participate-tabs">
@@ -168,7 +151,7 @@ export default function Participate (props) {
                     </div>
                   </div>
                 </div>
-                <div>
+                {/* <div>
                   <div className="main">
                     <span>THROUGH AN EXCHANGE</span>
                     <div className="image-holder">
@@ -181,7 +164,7 @@ export default function Participate (props) {
                       <img src={icon3} />
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div>
                   <div className="main">
                     <div>
@@ -245,7 +228,7 @@ export default function Participate (props) {
                 </div>
 
                 
-                <div>
+                {/* <div>
                   <h2>Through an Exchange</h2>
                   <p>
                     If you hold KSM on a crypto exchange, it may provide
@@ -266,7 +249,7 @@ export default function Participate (props) {
                       <img src={icon3} />
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div>
                   <h2>Using Polkadot-JS Apps</h2>
                   <ol>
@@ -285,7 +268,6 @@ export default function Participate (props) {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-                  */}
       </Container>
     </div>
     </div>
