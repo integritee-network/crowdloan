@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c3237b2.chunk.css",
-    "main.js": "/static/js/main.62eb7318.chunk.js",
-    "main.js.map": "/static/js/main.62eb7318.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a60cdb36.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a60cdb36.js.map",
-    "static/css/2.8545b19f.chunk.css": "/static/css/2.8545b19f.chunk.css",
-    "static/js/2.1af0f98f.chunk.js": "/static/js/2.1af0f98f.chunk.js",
-    "static/js/2.1af0f98f.chunk.js.map": "/static/js/2.1af0f98f.chunk.js.map",
+    "main.css": "/static/css/main.1426e290.chunk.css",
+    "main.js": "/static/js/main.ae636611.chunk.js",
+    "main.js.map": "/static/js/main.ae636611.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c241433b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c241433b.js.map",
+    "static/css/2.d354baf8.chunk.css": "/static/css/2.d354baf8.chunk.css",
+    "static/js/2.1e33c8e2.chunk.js": "/static/js/2.1e33c8e2.chunk.js",
+    "static/js/2.1e33c8e2.chunk.js.map": "/static/js/2.1e33c8e2.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.8545b19f.chunk.css.map": "/static/css/2.8545b19f.chunk.css.map",
-    "static/css/main.9c3237b2.chunk.css.map": "/static/css/main.9c3237b2.chunk.css.map",
-    "static/js/2.1af0f98f.chunk.js.LICENSE.txt": "/static/js/2.1af0f98f.chunk.js.LICENSE.txt",
+    "static/css/2.d354baf8.chunk.css.map": "/static/css/2.d354baf8.chunk.css.map",
+    "static/css/main.1426e290.chunk.css.map": "/static/css/main.1426e290.chunk.css.map",
+    "static/js/2.1e33c8e2.chunk.js.LICENSE.txt": "/static/js/2.1e33c8e2.chunk.js.LICENSE.txt",
     "static/media/1.32f02937.png": "/static/media/1.32f02937.png",
     "static/media/10.aeff63b0.png": "/static/media/10.aeff63b0.png",
     "static/media/11.5c84af9b.png": "/static/media/11.5c84af9b.png",
@@ -29,11 +29,11 @@
     "static/media/App.css": "/static/media/up.fdc74fb4.svg",
     "static/media/GothamRounded-Bold.a829ff15.otf": "/static/media/GothamRounded-Bold.a829ff15.otf",
     "static/media/GothamRounded-Medium.10d88929.otf": "/static/media/GothamRounded-Medium.10d88929.otf",
+    "static/media/Guaranteed4.6e3b8811.png": "/static/media/Guaranteed4.6e3b8811.png",
     "static/media/IntegriteeLogoAndSlogan.ac09f3d1.svg": "/static/media/IntegriteeLogoAndSlogan.ac09f3d1.svg",
     "static/media/KUCOIN.726b4e7a.svg": "/static/media/KUCOIN.726b4e7a.svg",
     "static/media/Medium-Logo.a2a2458b.png": "/static/media/Medium-Logo.a2a2458b.png",
     "static/media/semantic.min.css": "/static/media/outline-icons.ddae9b1b.woff",
-    "static/media/element.27263657.png": "/static/media/element.27263657.png",
     "static/media/graph.c098d66e.png": "/static/media/graph.c098d66e.png",
     "static/media/graph2.cddf97ae.png": "/static/media/graph2.cddf97ae.png",
     "static/media/i0.106e6919.svg": "/static/media/i0.106e6919.svg",
@@ -46,10 +46,10 @@
     "static/media/polkadot.9550784c.png": "/static/media/polkadot.9550784c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a60cdb36.js",
-    "static/css/2.8545b19f.chunk.css",
-    "static/js/2.1af0f98f.chunk.js",
-    "static/css/main.9c3237b2.chunk.css",
-    "static/js/main.62eb7318.chunk.js"
+    "static/js/runtime-main.c241433b.js",
+    "static/css/2.d354baf8.chunk.css",
+    "static/js/2.1e33c8e2.chunk.js",
+    "static/css/main.1426e290.chunk.css",
+    "static/js/main.ae636611.chunk.js"
   ]
 }
