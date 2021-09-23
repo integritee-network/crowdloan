@@ -25,7 +25,10 @@ export default function Participate(props) {
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
   const [status, setStatus] = useState(null);
-  const [formState, setFormState] = useState({ addressTo: null, amount: 0 });
+  const [formState, setFormState] = useState({
+    addressTo: null,
+    amount: 0.1,
+  });
   const [toggleOne, setToggleOne] = useState(false);
   const [toggleTwo, setToggleTwo] = useState(
     new URL(window.location.href).searchParams.get('ref')
@@ -42,6 +45,17 @@ export default function Participate(props) {
   const bestNumber = api.derive.chain.bestNumber;
 
   const [accountAddress, setAccountAddress] = useState(null);
+  const [accountBalance, setAccountBalance] = useState(0);
+
+  useEffect(() => {
+    console.log('1****************');
+    console.log(accountBalance);
+    console.log('1****************');
+    if (accountBalance < 0.1) {
+      setDisableButton(true);
+      setStatus(`You do not have enough balance`);
+    }
+  }, [accountBalance]);
 
   useEffect(() => {
     let unsubscribeAll = null;
@@ -88,10 +102,16 @@ export default function Participate(props) {
   const onChange = (_, data) => {
     setFormState((prev) => ({ ...prev, [data.state]: data.value }));
     if (!crowdLoanEnded) {
-      if (data.value === '' || data.value <= 0 || data.value < 0.1) {
+      // if (data.value === '' || data.value <= 0 || data.value < 0.1) {
+      if (data.value === '' || data.value < 0.1) {
         setDisableButton(true);
+        setStatus('Please enter amount equal or greater than 0.1');
+      } else if (data.value > accountBalance) {
+        setDisableButton(true);
+        setStatus(`Please enter amount equal or less than ${accountBalance}`);
       } else {
         setDisableButton(false);
+        setStatus('');
       }
     }
   };
@@ -242,6 +262,7 @@ export default function Participate(props) {
                     <AccountSelector
                       className='accounts-section'
                       setAccountAddress={setAccountAddress}
+                      setAccountBalance={setAccountBalance}
                     />
 
                     {/* <div className={'polkadot_status'}>{status}</div> */}
@@ -258,6 +279,7 @@ export default function Participate(props) {
                           state='amount'
                           placeholder='Enter KSM Amount'
                           onChange={onChange}
+                          pattern='^([1-9](?:\.[1-9])?|0?\.[1-9])$'
                         />
                       </div>
                     </div>
@@ -384,9 +406,7 @@ export default function Participate(props) {
               </div> */}
                   <div>
                     <h2>Using Polkadot-JS Apps</h2>
-                    <p>
-                      Follow the instructions detailed in this video:
-                    </p>
+                    <p>Follow the instructions detailed in this video:</p>
 
                     <EmbedVideo />
                   </div>
