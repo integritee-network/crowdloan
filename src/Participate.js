@@ -18,7 +18,7 @@ import { useSubstrate } from './substrate-lib';
 import AccountSelector from './AccountSelector';
 import { mnemonicGenerate } from '@polkadot/util-crypto';
 import EmbedVideo from './EmbedVideo';
-//import { P } from 'glamorous';
+// import { P } from 'glamorous';
 
 export default function Participate(props) {
   const mnemonic = mnemonicGenerate();
@@ -48,12 +48,15 @@ export default function Participate(props) {
   const [accountBalance, setAccountBalance] = useState(0);
 
   useEffect(() => {
-    console.log('1****************');
-    console.log(accountBalance);
-    console.log('1****************');
+    // console.log('1****************');
+    // console.log(accountBalance);
+    // console.log('1****************');
     if (accountBalance < 0.1) {
       setDisableButton(true);
-      setStatus(`You do not have enough balance`);
+      setStatus('You do not have enough balance');
+    } else {
+      setDisableButton(false);
+      setStatus('');
     }
   }, [accountBalance]);
 
@@ -72,7 +75,7 @@ export default function Participate(props) {
   }, [bestNumber]);
 
   const { apiState, keyring, keyringState, apiError } = useSubstrate();
-  // keyring.setSS58Format(2);
+  keyring.setSS58Format(2);
   const accountPair =
     accountAddress &&
     keyringState === 'READY' &&
@@ -262,7 +265,7 @@ export default function Participate(props) {
                     <AccountSelector
                       className='accounts-section'
                       setAccountAddress={setAccountAddress}
-                      setAccountBalance={setAccountBalance}
+                      setAccountBalancee={setAccountBalance}
                     />
 
                     {/* <div className={'polkadot_status'}>{status}</div> */}
