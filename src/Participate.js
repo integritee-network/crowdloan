@@ -75,7 +75,7 @@ export default function Participate(props) {
   }, [bestNumber]);
 
   const { apiState, keyring, keyringState, apiError } = useSubstrate();
-  keyring.setSS58Format(2);
+  // keyring.setSS58Format(2);
   const accountPair =
     accountAddress &&
     keyringState === 'READY' &&

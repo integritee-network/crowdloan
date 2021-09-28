@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 // import { ReactComponent as Logo } from './css/IntegriteeLogoAndSlogan.svg';
 import logo from './css/IntegriteeLogoAndSlogan.svg';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import elementlogo from './Images/social-blue-logo/Element-Logo.jpeg';
-import linkedinlogo from './Images/social-blue-logo/LinkedIn-Logo.jpeg';
+import elementlogo from './Images/social-blue-logo/Element-logo.png';
+import linkedinlogo from './Images/social-blue-logo/LinkedIn-logo.png';
 import mediumlogo from './Images/social-blue-logo/Medium-Logo.jpeg';
-import subsociallogo from './Images/social-blue-logo/Subsocial-Logo.jpeg';
-import telegramlogo from './Images/social-blue-logo/Telegram-Logo.jpeg';
-import twitterlogo from './Images/social-blue-logo/Twitter-Logo.jpeg';
+import subsociallogo from './Images/social-blue-logo/Subsocial-logo.png';
+import telegramlogo from './Images/social-blue-logo/Telegram-logo.png';
+import twitterlogo from './Images/social-blue-logo/Twitter-logo.png';
 
 import { Menu, Container, Icon, Label } from 'semantic-ui-react';
 
