@@ -8,6 +8,7 @@ import mediumlogo from './Images/social-blue-logo/Medium-Logo.jpeg';
 import subsociallogo from './Images/social-blue-logo/Subsocial-logo.png';
 import telegramlogo from './Images/social-blue-logo/Telegram-logo.png';
 import twitterlogo from './Images/social-blue-logo/Twitter-logo.png';
+import discordlogo from './Images/social-blue-logo/Discord-logo.png';
 
 import { Menu, Container, Icon, Label } from 'semantic-ui-react';
 
@@ -73,6 +74,8 @@ function Main(props) {
           <Menu.Item name='Crowdloan Campaign' href='#crowdloan' />
 
           <Menu.Item name='Referral Program' href='#referral' />
+
+          <Menu.Item name='NFT' href='#nftsection' />
 
           <Menu.Item name='TEER Token' href='#TeerToken' />
           <Menu.Item name='FAQ' href='#FAQ' />
@@ -140,6 +143,16 @@ function Main(props) {
                   <img src={mediumlogo} alt='medium logo' width={20} />{' '}
                 </a>{' '}
               </li>
+              {/* <li>
+                {' '}
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://discord.com/invite/anhtxwr4eS'
+                >
+                  <img src={discordlogo} alt='medium logo' width={20} />{' '}
+                </a>{' '}
+              </li> */}
             </ul>
           </div>
         </Menu.Menu>
