@@ -6,7 +6,7 @@ import { Button, Modal, Form } from 'semantic-ui-react';
 import UserIcon from '../src/Images/user.png';
 import IntegriteeIcon from '../src/Images/integritee-logo.png';
 import { mnemonicGenerate } from '@polkadot/util-crypto';
-import mediumlogo from './Images/social-blue-logo/Medium-Logo.jpeg';
+import mediumlogo from './Images/social-blue-logo/Medium-Logo.png';
 import number1 from './Images/NFT-Section/numbers-1.png';
 import number2 from './Images/NFT-Section/numbers-2.png';
 import number3 from './Images/NFT-Section/numbers-3.png';
