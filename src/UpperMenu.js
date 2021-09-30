@@ -142,7 +142,16 @@ function Main(props) {
                   <img src={mediumlogo} alt='medium logo' width={20} />{' '}
                 </a>{' '}
               </li>
-         
+              <li>
+                {' '}
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://discord.com/invite/anhtxwr4eS'
+                >
+                  <img src={discordlogo} alt='discord logo' width={20} />{' '}
+                </a>{' '}
+              </li>
             </ul>
           </div>
         </Menu.Menu>
