@@ -8,6 +8,7 @@ import mediumlogo from './Images/social-blue-logo/Medium-Logo.png';
 import subsociallogo from './Images/social-blue-logo/Subsocial-logo.png';
 import telegramlogo from './Images/social-blue-logo/Telegram-logo.png';
 import twitterlogo from './Images/social-blue-logo/Twitter-logo.png';
+import discordlogo from './Images/social-blue-logo/Discord-logo.png';
 
 import { Menu, Container, Icon, Label } from 'semantic-ui-react';
 
