@@ -434,6 +434,9 @@ export default function Participate(props) {
                     <p>Follow the instructions detailed in this video:</p>
 
                     <EmbedVideo style={{width:'100%'}} />
+                    <p>
+                    Note: The only way to benefit from the Integritee Crowdloan Referral Program is by contributing on this site.
+                    </p>
                   </div>
                   <div>
                   <h2>Using Fearless Wallet</h2>
@@ -447,7 +450,7 @@ export default function Participate(props) {
                       </li>
                       <br/>
                       <li>
-                      Create an account
+                      Import or create and fund an account
                       </li>
                       <br/>
                       <li>
@@ -465,7 +468,7 @@ export default function Participate(props) {
                     </ol>
                     <br/>
                     <p>
-                    Note: The only way to benefit from the Integritee Crowdloan Referral Program is by contributing via the Polkadot.Js App on this site.
+                    Note: The only way to benefit from the Integritee Crowdloan Referral Program is by contributing on this site.
                     </p>
                   </div>
                 </Slider>
