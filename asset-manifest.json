@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a521af2.chunk.css",
-    "main.js": "/static/js/main.c8c10dea.chunk.js",
-    "main.js.map": "/static/js/main.c8c10dea.chunk.js.map",
+    "main.css": "/static/css/main.cf7ac6ba.chunk.css",
+    "main.js": "/static/js/main.1353a2e2.chunk.js",
+    "main.js.map": "/static/js/main.1353a2e2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c241433b.js",
     "runtime-main.js.map": "/static/js/runtime-main.c241433b.js.map",
     "static/css/2.d354baf8.chunk.css": "/static/css/2.d354baf8.chunk.css",
-    "static/js/2.20e7397a.chunk.js": "/static/js/2.20e7397a.chunk.js",
-    "static/js/2.20e7397a.chunk.js.map": "/static/js/2.20e7397a.chunk.js.map",
+    "static/js/2.50660b0c.chunk.js": "/static/js/2.50660b0c.chunk.js",
+    "static/js/2.50660b0c.chunk.js.map": "/static/js/2.50660b0c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.d354baf8.chunk.css.map": "/static/css/2.d354baf8.chunk.css.map",
-    "static/css/main.8a521af2.chunk.css.map": "/static/css/main.8a521af2.chunk.css.map",
-    "static/js/2.20e7397a.chunk.js.LICENSE.txt": "/static/js/2.20e7397a.chunk.js.LICENSE.txt",
+    "static/css/main.cf7ac6ba.chunk.css.map": "/static/css/main.cf7ac6ba.chunk.css.map",
+    "static/js/2.50660b0c.chunk.js.LICENSE.txt": "/static/js/2.50660b0c.chunk.js.LICENSE.txt",
     "static/media/1.32f02937.png": "/static/media/1.32f02937.png",
     "static/media/10.aeff63b0.png": "/static/media/10.aeff63b0.png",
     "static/media/11.5c84af9b.png": "/static/media/11.5c84af9b.png",
@@ -30,6 +30,7 @@
     "static/media/GothamRounded-Medium.10d88929.otf": "/static/media/GothamRounded-Medium.10d88929.otf",
     "static/media/Guaranteed4.6e3b8811.png": "/static/media/Guaranteed4.6e3b8811.png",
     "static/media/IntegriteeLogoAndSlogan.ac09f3d1.svg": "/static/media/IntegriteeLogoAndSlogan.ac09f3d1.svg",
+    "static/media/Loyalty Rewards.e8689851.png": "/static/media/Loyalty Rewards.e8689851.png",
     "static/media/Medium-Logo.a2a2458b.png": "/static/media/Medium-Logo.a2a2458b.png",
     "static/media/semantic.min.css": "/static/media/outline-icons.ddae9b1b.woff",
     "static/media/graph2.cddf97ae.png": "/static/media/graph2.cddf97ae.png",
@@ -40,8 +41,8 @@
   "entrypoints": [
     "static/js/runtime-main.c241433b.js",
     "static/css/2.d354baf8.chunk.css",
-    "static/js/2.20e7397a.chunk.js",
-    "static/css/main.8a521af2.chunk.css",
-    "static/js/main.c8c10dea.chunk.js"
+    "static/js/2.50660b0c.chunk.js",
+    "static/css/main.cf7ac6ba.chunk.css",
+    "static/js/main.1353a2e2.chunk.js"
   ]
 }
